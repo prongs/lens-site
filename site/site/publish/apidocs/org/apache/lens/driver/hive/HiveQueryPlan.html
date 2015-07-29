@@ -161,6 +161,12 @@ extends <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPla
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/lens/server/api/query/cost/QueryCost.html" title="interface in org.apache.lens.server.api.query.cost">QueryCost</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/driver/hive/HiveQueryPlan.html#getCost()">getCost</a></strong>()</code>
+<div class="block">Get the cost associated with the plan</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/driver/hive/HiveQueryPlan.html#getPlan()">getPlan</a></strong>()</code>
 <div class="block">Get the query plan</div>
@@ -172,7 +178,7 @@ extends <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPla
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;org.apache.lens.server.api.driver.<a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html" title="class in org.apache.lens.server.api.driver">DriverQueryPlan</a></h3>
-<code><a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#getCost()">getCost</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#getExecMode()">getExecMode</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#getHandle()">getHandle</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#getPartitions()">getPartitions</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#getPrepareHandle()">getPrepareHandle</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#getResultDestination()">getResultDestination</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#getScanMode()">getScanMode</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#getTablesQueried()">getTablesQueried</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#getTableWeight(java.lang.String)">getTableWeight</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#getTableWeights()">getTableWeights</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#hasSubQuery()">hasSubQuery</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#setPrepareHandle(org.apache.lens.api.query.QueryPrepareHandle)">setPrepareHandle</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#toQueryPlan()">toQueryPlan</a></code></li>
+<code><a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#getExecMode()">getExecMode</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#getHandle()">getHandle</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#getPartitions()">getPartitions</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#getPrepareHandle()">getPrepareHandle</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#getResultDestination()">getResultDestination</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#getScanMode()">getScanMode</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#getTablesQueried()">getTablesQueried</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#getTableWeight(java.lang.String)">getTableWeight</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#getTableWeights()">getTableWeights</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#hasSubQuery()">hasSubQuery</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#setPrepareHandle(org.apache.lens.api.query.QueryPrepareHandle)">setPrepareHandle</a>, <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#toQueryPlan()">toQueryPlan</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
@@ -223,7 +229,7 @@ extends <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPla
 <a name="getPlan()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getPlan</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getPlan()</pre>
@@ -233,6 +239,22 @@ extends <a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPla
 <dt><strong>Specified by:</strong></dt>
 <dd><code><a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#getPlan()">getPlan</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html" title="class in org.apache.lens.server.api.driver">DriverQueryPlan</a></code></dd>
 <dt><span class="strong">Returns:</span></dt><dd>The string representation of the plan</dd></dl>
+</li>
+</ul>
+<a name="getCost()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getCost</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../../org/apache/lens/server/api/query/cost/QueryCost.html" title="interface in org.apache.lens.server.api.query.cost">QueryCost</a>&nbsp;getCost()</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#getCost()">DriverQueryPlan</a></code></strong></div>
+<div class="block">Get the cost associated with the plan</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html#getCost()">getCost</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html" title="class in org.apache.lens.server.api.driver">DriverQueryPlan</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>QueryCostTO object</dd></dl>
 </li>
 </ul>
 </li>

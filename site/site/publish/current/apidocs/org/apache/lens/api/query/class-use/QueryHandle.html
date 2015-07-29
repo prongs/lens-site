@@ -146,6 +146,18 @@
 <div class="block">From string.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../org/apache/lens/api/query/QueryHandle.html" title="class in org.apache.lens.api.query">QueryHandle</a></code></td>
+<td class="colLast"><span class="strong">QueryHandleWithResultSet.</span><code><strong><a href="../../../../../../org/apache/lens/api/query/QueryHandleWithResultSet.html#getQueryHandle()">getQueryHandle</a></strong>()</code>
+<div class="block">The query handle.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../org/apache/lens/api/query/QueryHandle.html" title="class in org.apache.lens.api.query">QueryHandle</a></code></td>
+<td class="colLast"><span class="strong">LensQuery.</span><code><strong><a href="../../../../../../org/apache/lens/api/query/LensQuery.html#getQueryHandle()">getQueryHandle</a></strong>()</code>
+<div class="block">The query handle.</div>
+</td>
+</tr>
 </tbody>
 </table>
 <table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
@@ -155,6 +167,26 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/api/query/LensQuery.html#LensQuery(org.apache.lens.api.query.QueryHandle,%20java.lang.String,%20java.lang.String,%20org.apache.lens.api.Priority,%20boolean,%20java.lang.String,%20java.lang.String,%20org.apache.lens.api.query.QueryStatus,%20java.lang.String,%20java.lang.String,%20org.apache.lens.api.LensConf,%20long,%20long,%20long,%20long,%20long,%20long,%20java.lang.String)">LensQuery</a></strong>(<a href="../../../../../../org/apache/lens/api/query/QueryHandle.html" title="class in org.apache.lens.api.query">QueryHandle</a>&nbsp;queryHandle,
+         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;userQuery,
+         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;submittedUser,
+         <a href="../../../../../../org/apache/lens/api/Priority.html" title="enum in org.apache.lens.api">Priority</a>&nbsp;priority,
+         boolean&nbsp;isPersistent,
+         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;selectedDriverClassName,
+         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;driverQuery,
+         <a href="../../../../../../org/apache/lens/api/query/QueryStatus.html" title="class in org.apache.lens.api.query">QueryStatus</a>&nbsp;status,
+         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;resultSetPath,
+         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;driverOpHandle,
+         <a href="../../../../../../org/apache/lens/api/LensConf.html" title="class in org.apache.lens.api">LensConf</a>&nbsp;queryConf,
+         long&nbsp;submissionTime,
+         long&nbsp;launchTime,
+         long&nbsp;driverStartTime,
+         long&nbsp;driverFinishTime,
+         long&nbsp;finishTime,
+         long&nbsp;closedTime,
+         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;queryName)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/api/query/QueryHandleWithResultSet.html#QueryHandleWithResultSet(org.apache.lens.api.query.QueryHandle)">QueryHandleWithResultSet</a></strong>(<a href="../../../../../../org/apache/lens/api/query/QueryHandle.html" title="class in org.apache.lens.api.query">QueryHandle</a>&nbsp;handle)</code>
 <div class="block">Instantiates a new query handle with result set.</div>
 </td>
@@ -772,6 +804,18 @@
 <div class="block">Execute already prepared query asynchronously.</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../org/apache/lens/api/query/QueryHandle.html" title="class in org.apache.lens.api.query">QueryHandle</a></code></td>
+<td class="colLast"><span class="strong">QueryEvent.</span><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryEvent.html#getQueryHandle()">getQueryHandle</a></strong>()</code>
+<div class="block">The query handle.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../org/apache/lens/api/query/QueryHandle.html" title="class in org.apache.lens.api.query">QueryHandle</a></code></td>
+<td class="colLast"><span class="strong">QueryContext.</span><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#getQueryHandle()">getQueryHandle</a></strong>()</code>
+<div class="block">The query handle.</div>
+</td>
+</tr>
 </tbody>
 </table>
 <table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
@@ -846,6 +890,12 @@
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">QueryContext.</span><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#setQueryHandle(org.apache.lens.api.query.QueryHandle)">setQueryHandle</a></strong>(<a href="../../../../../../org/apache/lens/api/query/QueryHandle.html" title="class in org.apache.lens.api.query">QueryHandle</a>&nbsp;queryHandle)</code>
+<div class="block">The query handle.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><span class="strong">QueryExecutionService.</span><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryExecutionService.html#updateQueryConf(org.apache.lens.api.LensSessionHandle,%20org.apache.lens.api.query.QueryHandle,%20org.apache.lens.api.LensConf)">updateQueryConf</a></strong>(<a href="../../../../../../org/apache/lens/api/LensSessionHandle.html" title="class in org.apache.lens.api">LensSessionHandle</a>&nbsp;sessionHandle,
                <a href="../../../../../../org/apache/lens/api/query/QueryHandle.html" title="class in org.apache.lens.api.query">QueryHandle</a>&nbsp;queryHandle,

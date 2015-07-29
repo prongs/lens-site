@@ -825,8 +825,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
                             <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;dbName)</pre>
 <div class="block">Get all native tables.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>sessionid</code> - The sessionid in which user is working</dd><dd><code>dbOption</code> - The options available are 'current' and 'all'. If option is current, gives all tables from current
-                  db. If option is all, gives all tables from all databases. If dbname is passed, dbOption is
-                  ignored. If no dbOption or dbname are passed, then default is to get tables from current db.</dd><dd><code>dbName</code> - The db name. If not empty, the tables in the db will be returned</dd>
+ db. If option is all, gives all tables from all databases. If dbname is passed, dbOption is
+ ignored. If no dbOption or dbname are passed, then default is to get tables from current db.</dd><dd><code>dbName</code> - The db name. If not empty, the tables in the db will be returned</dd>
 <dt><span class="strong">Returns:</span></dt><dd>StringList consisting of all table names.</dd>
 <dt><span class="strong">Throws:</span></dt>
 <dd><code>javax.ws.rs.WebApplicationException</code></dd></dl>
@@ -1155,7 +1155,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
                        boolean&nbsp;cascade)</pre>
 <div class="block">Delete all fact tables</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>sessionid</code> - The sessionid in which user is working</dd><dd><code>cascade</code> - if set to true, all the underlying tables will be dropped, if set to false, only the fact table
-                  will be dropped</dd>
+ will be dropped</dd>
 <dt><span class="strong">Returns:</span></dt><dd>APIResult with state <a href="../../../../../org/apache/lens/api/APIResult.Status.html#SUCCEEDED"><code>APIResult.Status.SUCCEEDED</code></a> in case of successful delete. APIResult with state <a href="../../../../../org/apache/lens/api/APIResult.Status.html#FAILED"><code>APIResult.Status.FAILED</code></a> in case of delete failure. APIResult with state <a href="../../../../../org/apache/lens/api/APIResult.Status.html#PARTIAL"><code>APIResult.Status.PARTIAL</code></a> in case of partial delete.</dd></dl>
 </li>
 </ul>
@@ -1318,7 +1318,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
                                                                   throws <a href="../../../../../org/apache/lens/server/api/error/LensException.html" title="class in org.apache.lens.server.api.error">LensException</a></pre>
 <div class="block">Get all partitions of the fact table in the specified storage; can be filtered as well.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>sessionid</code> - The sessionid in which user is working</dd><dd><code>factName</code> - The fact table name</dd><dd><code>storage</code> - The storage name</dd><dd><code>filter</code> - The filter for partitions, string representation of the filter for ex: x &lt; "xxx" and y &gt;
-                  "yyy"</dd>
+ "yyy"</dd>
 <dt><span class="strong">Returns:</span></dt><dd>JAXB representation of <a href="../../../../../org/apache/lens/api/metastore/XPartitionList.html" title="class in org.apache.lens.api.metastore"><code>XPartitionList</code></a> containing <a href="../../../../../org/apache/lens/api/metastore/XPartition.html" title="class in org.apache.lens.api.metastore"><code>XPartition</code></a> objects</dd>
 <dt><span class="strong">Throws:</span></dt>
 <dd><code><a href="../../../../../org/apache/lens/server/api/error/LensException.html" title="class in org.apache.lens.server.api.error">LensException</a></code></dd></dl>
@@ -1336,7 +1336,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
                                             <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;filter)</pre>
 <div class="block">Drop the partitions in the storage of a fact; can specified filter as well</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>sessionid</code> - The sessionid in which user is working</dd><dd><code>factName</code> - The fact table name</dd><dd><code>storage</code> - The storage name</dd><dd><code>filter</code> - The filter for partitions, string representation of the filter for ex: x &lt; "xxx" and y &gt;
-                  "yyy"</dd>
+ "yyy"</dd>
 <dt><span class="strong">Returns:</span></dt><dd><a href="../../../../../org/apache/lens/api/APIResult.html" title="class in org.apache.lens.api"><code>APIResult</code></a> with state <a href="../../../../../org/apache/lens/api/APIResult.Status.html#SUCCEEDED"><code>APIResult.Status.SUCCEEDED</code></a>, if drop was successful. <a href="../../../../../org/apache/lens/api/APIResult.html" title="class in org.apache.lens.api"><code>APIResult</code></a> with state
  <a href="../../../../../org/apache/lens/api/APIResult.Status.html#FAILED"><code>APIResult.Status.FAILED</code></a>, if drop has failed</dd></dl>
 </li>
@@ -1588,7 +1588,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
                                                          throws <a href="../../../../../org/apache/lens/server/api/error/LensException.html" title="class in org.apache.lens.server.api.error">LensException</a></pre>
 <div class="block">Get all partition of the dimension table in the specified storage; can be filtered</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>sessionid</code> - The sessionid in which user is working</dd><dd><code>dimension</code> - The dimension table name</dd><dd><code>storage</code> - The storage name</dd><dd><code>filter</code> - The filter for partitions, string representation of the filter for ex: x &lt; "xxx" and y &gt;
-                  "yyy"</dd>
+ "yyy"</dd>
 <dt><span class="strong">Returns:</span></dt><dd>JAXB representation of <a href="../../../../../org/apache/lens/api/metastore/XPartitionList.html" title="class in org.apache.lens.api.metastore"><code>XPartitionList</code></a> containing <a href="../../../../../org/apache/lens/api/metastore/XPartition.html" title="class in org.apache.lens.api.metastore"><code>XPartition</code></a> objects</dd>
 <dt><span class="strong">Throws:</span></dt>
 <dd><code><a href="../../../../../org/apache/lens/server/api/error/LensException.html" title="class in org.apache.lens.server.api.error">LensException</a></code></dd></dl>
@@ -1606,7 +1606,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
                                            <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;filter)</pre>
 <div class="block">Drop the partitions in the storage of a dimension table; can specified filter as well</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>sessionid</code> - The sessionid in which user is working</dd><dd><code>dimTableName</code> - The dimension table name</dd><dd><code>storage</code> - The storage name</dd><dd><code>filter</code> - The filter for partitions, string representation of the filter for ex: x &lt; 'xxx' and y &gt;
-                     'yyy'</dd>
+ 'yyy'</dd>
 <dt><span class="strong">Returns:</span></dt><dd><a href="../../../../../org/apache/lens/api/APIResult.html" title="class in org.apache.lens.api"><code>APIResult</code></a> with state <a href="../../../../../org/apache/lens/api/APIResult.Status.html#SUCCEEDED"><code>APIResult.Status.SUCCEEDED</code></a>, if drop was successful. <a href="../../../../../org/apache/lens/api/APIResult.html" title="class in org.apache.lens.api"><code>APIResult</code></a> with state
  <a href="../../../../../org/apache/lens/api/APIResult.Status.html#FAILED"><code>APIResult.Status.FAILED</code></a>, if drop has failed</dd></dl>
 </li>

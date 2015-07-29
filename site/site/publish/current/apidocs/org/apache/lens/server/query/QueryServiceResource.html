@@ -363,9 +363,9 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
  queries submitted by the user that has started the session. To get queries of all users, set the searchAllUsers
  parameter to false.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>sessionid</code> - The sessionid in which queryName is working</dd><dd><code>state</code> - If any state is passed, all the queries in that state will be returned, otherwise all queries will
-                  be returned. Possible states are {link QueryStatus.Status#values()}</dd><dd><code>queryName</code> - If any queryName is passed, all the queries containing the queryName will be returned, otherwise
-                  all the queries will be returned</dd><dd><code>user</code> - Returns queries submitted by this user. If set to "all", returns queries of all users. By default,
-                  returns queries of the current user.</dd><dd><code>fromDate</code> - from date to search queries in a time range, the range is inclusive(submitTime &gt;= fromDate)</dd><dd><code>toDate</code> - to date to search queries in a time range, the range is inclusive(toDate &gt;= submitTime)</dd>
+ be returned. Possible states are {link QueryStatus.Status#values()}</dd><dd><code>queryName</code> - If any queryName is passed, all the queries containing the queryName will be returned, otherwise
+ all the queries will be returned</dd><dd><code>user</code> - Returns queries submitted by this user. If set to "all", returns queries of all users. By default,
+ returns queries of the current user.</dd><dd><code>fromDate</code> - from date to search queries in a time range, the range is inclusive(submitTime &gt;= fromDate)</dd><dd><code>toDate</code> - to date to search queries in a time range, the range is inclusive(toDate &gt;= submitTime)</dd>
 <dt><span class="strong">Returns:</span></dt><dd>List of <a href="../../../../../org/apache/lens/api/query/QueryHandle.html" title="class in org.apache.lens.api.query"><code>QueryHandle</code></a> objects</dd></dl>
 </li>
 </ul>
@@ -384,11 +384,11 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
                                        throws <a href="../../../../../org/apache/lens/server/api/error/LensException.html" title="class in org.apache.lens.server.api.error">LensException</a></pre>
 <div class="block">Submit the query for explain or execute or execute with a timeout.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>sessionid</code> - The session in which user is submitting the query. Any configuration set in the session will
-                      be picked up.</dd><dd><code>query</code> - The query to run</dd><dd><code>operation</code> - The operation on the query. Supported operations are values:
-                      <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#ESTIMATE"><code>SubmitOp.ESTIMATE</code></a>,
-                      <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#EXPLAIN"><code>SubmitOp.EXPLAIN</code></a>,
-                      <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#EXECUTE"><code>SubmitOp.EXECUTE</code></a> and
-                      <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#EXECUTE_WITH_TIMEOUT"><code>SubmitOp.EXECUTE_WITH_TIMEOUT</code></a></dd><dd><code>conf</code> - The configuration for the query</dd><dd><code>timeoutmillis</code> - The timeout for the query, honored only in case of value <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#EXECUTE_WITH_TIMEOUT"><code>SubmitOp.EXECUTE_WITH_TIMEOUT</code></a> operation</dd><dd><code>queryName</code> - human readable query name set by user (optional parameter)</dd>
+ be picked up.</dd><dd><code>query</code> - The query to run</dd><dd><code>operation</code> - The operation on the query. Supported operations are values:
+ <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#ESTIMATE"><code>SubmitOp.ESTIMATE</code></a>,
+ <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#EXPLAIN"><code>SubmitOp.EXPLAIN</code></a>,
+ <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#EXECUTE"><code>SubmitOp.EXECUTE</code></a> and
+ <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#EXECUTE_WITH_TIMEOUT"><code>SubmitOp.EXECUTE_WITH_TIMEOUT</code></a></dd><dd><code>conf</code> - The configuration for the query</dd><dd><code>timeoutmillis</code> - The timeout for the query, honored only in case of value <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#EXECUTE_WITH_TIMEOUT"><code>SubmitOp.EXECUTE_WITH_TIMEOUT</code></a> operation</dd><dd><code>queryName</code> - human readable query name set by user (optional parameter)</dd>
 <dt><span class="strong">Returns:</span></dt><dd><a href="../../../../../org/apache/lens/api/result/LensAPIResult.html" title="class in org.apache.lens.api.result"><code>LensAPIResult</code></a> with DATA as <a href="../../../../../org/apache/lens/api/query/QueryHandle.html" title="class in org.apache.lens.api.query"><code>QueryHandle</code></a> in case of
  <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#EXECUTE"><code>SubmitOp.EXECUTE</code></a> operation.
  <a href="../../../../../org/apache/lens/api/query/QueryPlan.html" title="class in org.apache.lens.api.query"><code>QueryPlan</code></a> in case of <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#EXPLAIN"><code>SubmitOp.EXPLAIN</code></a> operation.
@@ -412,16 +412,16 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
                          long&nbsp;toDate)</pre>
 <div class="block">Cancel all the queries in query server; can be filtered with state and user.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>sessionid</code> - The session in which cancel is issued</dd><dd><code>state</code> - If any state is passed, all the queries in that state will be cancelled, otherwise all queries
-                  will be cancelled. Possible states are
-                  <a href="../../../../../org/apache/lens/api/query/QueryStatus.Status.html#values()"><code>QueryStatus.Status.values()</code></a>
-                  The queries in <a href="../../../../../org/apache/lens/api/query/QueryStatus.Status.html#FAILED"><code>QueryStatus.Status.FAILED</code></a>,
-                  <a href="../../../../../org/apache/lens/api/query/QueryStatus.Status.html#CLOSED"><code>QueryStatus.Status.CLOSED</code></a>,
-                  <a href="../../../../../org/apache/lens/api/query/QueryStatus.Status.html#SUCCESSFUL"><code>QueryStatus.Status.SUCCESSFUL</code></a> cannot be cancelled</dd><dd><code>user</code> - If any user is passed, all the queries submitted by the user will be cancelled, otherwise all the
-                  queries will be cancelled</dd><dd><code>queryName</code> - Cancel queries matching the query name</dd><dd><code>fromDate</code> - the from date, inclusive(submitTime&gt;=fromDate)</dd><dd><code>toDate</code> - the to date, inclusive(toDate&gt;=submitTime)</dd>
+ will be cancelled. Possible states are
+ <a href="../../../../../org/apache/lens/api/query/QueryStatus.Status.html#values()"><code>QueryStatus.Status.values()</code></a>
+ The queries in <a href="../../../../../org/apache/lens/api/query/QueryStatus.Status.html#FAILED"><code>QueryStatus.Status.FAILED</code></a>,
+ <a href="../../../../../org/apache/lens/api/query/QueryStatus.Status.html#CLOSED"><code>QueryStatus.Status.CLOSED</code></a>,
+ <a href="../../../../../org/apache/lens/api/query/QueryStatus.Status.html#SUCCESSFUL"><code>QueryStatus.Status.SUCCESSFUL</code></a> cannot be cancelled</dd><dd><code>user</code> - If any user is passed, all the queries submitted by the user will be cancelled, otherwise all the
+ queries will be cancelled</dd><dd><code>queryName</code> - Cancel queries matching the query name</dd><dd><code>fromDate</code> - the from date, inclusive(submitTime&gt;=fromDate)</dd><dd><code>toDate</code> - the to date, inclusive(toDate&gt;=submitTime)</dd>
 <dt><span class="strong">Returns:</span></dt><dd>APIResult with state <a href="../../../../../org/apache/lens/api/APIResult.Status.html#SUCCEEDED"><code>APIResult.Status.SUCCEEDED</code></a> in case of successful
-                   cancellation. APIResult with state <a href="../../../../../org/apache/lens/api/APIResult.Status.html#FAILED"><code>APIResult.Status.FAILED</code></a>
-                   in case of cancellation failure. APIResult with state
-                    <a href="../../../../../org/apache/lens/api/APIResult.Status.html#PARTIAL"><code>APIResult.Status.PARTIAL</code></a> in case of partial cancellation.</dd></dl>
+ cancellation. APIResult with state <a href="../../../../../org/apache/lens/api/APIResult.Status.html#FAILED"><code>APIResult.Status.FAILED</code></a>
+ in case of cancellation failure. APIResult with state
+ <a href="../../../../../org/apache/lens/api/APIResult.Status.html#PARTIAL"><code>APIResult.Status.PARTIAL</code></a> in case of partial cancellation.</dd></dl>
 </li>
 </ul>
 <a name="getAllPreparedQueries(org.apache.lens.api.LensSessionHandle, java.lang.String, java.lang.String, long, long)">
@@ -437,7 +437,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
                                              long&nbsp;toDate)</pre>
 <div class="block">Get all prepared queries in the query server; can be filtered with user.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>sessionid</code> - The sessionid in which user is working</dd><dd><code>user</code> - returns queries of the user. If set to "all", returns queries of all users. By default returns the
-                  queries of the current user.</dd><dd><code>queryName</code> - returns queries matching the query name</dd><dd><code>fromDate</code> - start time for filtering prepared queries by preparation time</dd><dd><code>toDate</code> - end time for filtering prepared queries by preparation time</dd>
+ queries of the current user.</dd><dd><code>queryName</code> - returns queries matching the query name</dd><dd><code>fromDate</code> - start time for filtering prepared queries by preparation time</dd><dd><code>toDate</code> - end time for filtering prepared queries by preparation time</dd>
 <dt><span class="strong">Returns:</span></dt><dd>List of QueryPrepareHandle objects</dd></dl>
 </li>
 </ul>
@@ -454,12 +454,12 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
                              <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;queryName)</pre>
 <div class="block">Prepare a query or 'explain and prepare' the query.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>sessionid</code> - The session in which user is preparing the query. Any configuration set in the session will be
-                  picked up.</dd><dd><code>query</code> - The query to prepare</dd><dd><code>operation</code> - The operation on the query. Supported operations are
-                  <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#EXPLAIN_AND_PREPARE"><code>SubmitOp.EXPLAIN_AND_PREPARE</code></a> or
-                  <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#PREPARE"><code>SubmitOp.PREPARE</code></a></dd><dd><code>conf</code> - The configuration for preparing the query</dd><dd><code>queryName</code> - human readable query name set by user (optional parameter)</dd>
+ picked up.</dd><dd><code>query</code> - The query to prepare</dd><dd><code>operation</code> - The operation on the query. Supported operations are
+ <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#EXPLAIN_AND_PREPARE"><code>SubmitOp.EXPLAIN_AND_PREPARE</code></a> or
+ <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#PREPARE"><code>SubmitOp.PREPARE</code></a></dd><dd><code>conf</code> - The configuration for preparing the query</dd><dd><code>queryName</code> - human readable query name set by user (optional parameter)</dd>
 <dt><span class="strong">Returns:</span></dt><dd><a href="../../../../../org/apache/lens/api/query/QueryPrepareHandle.html" title="class in org.apache.lens.api.query"><code>QueryPrepareHandle</code></a> incase of {link org.apache.lens.api.query.SubmitOp#PREPARE} operation.
-         <a href="../../../../../org/apache/lens/api/query/QueryPlan.html" title="class in org.apache.lens.api.query"><code>QueryPlan</code></a> incase of <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#EXPLAIN_AND_PREPARE"><code>SubmitOp.EXPLAIN_AND_PREPARE</code></a>
-         and the query plan will contain the prepare handle as well.</dd></dl>
+ <a href="../../../../../org/apache/lens/api/query/QueryPlan.html" title="class in org.apache.lens.api.query"><code>QueryPlan</code></a> incase of <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#EXPLAIN_AND_PREPARE"><code>SubmitOp.EXPLAIN_AND_PREPARE</code></a>
+ and the query plan will contain the prepare handle as well.</dd></dl>
 </li>
 </ul>
 <a name="destroyPreparedQueries(org.apache.lens.api.LensSessionHandle, java.lang.String, java.lang.String, long, long)">
@@ -475,11 +475,11 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
                                long&nbsp;toDate)</pre>
 <div class="block">Destroy all the prepared queries; Can be filtered with user.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>sessionid</code> - The session in which cancel is issued</dd><dd><code>user</code> - destroys queries of the user. If set to "all", destroys queries of all users. By default destroys
-                  the queries of the current user.</dd><dd><code>queryName</code> - destroys queries matching the query name</dd><dd><code>fromDate</code> - the from date</dd><dd><code>toDate</code> - the to date</dd>
+ the queries of the current user.</dd><dd><code>queryName</code> - destroys queries matching the query name</dd><dd><code>fromDate</code> - the from date</dd><dd><code>toDate</code> - the to date</dd>
 <dt><span class="strong">Returns:</span></dt><dd>APIResult with state <a href="../../../../../org/apache/lens/api/APIResult.Status.html#SUCCEEDED"><code>APIResult.Status.SUCCEEDED</code></a> in case of successful
-         destroy. APIResult with state <a href="../../../../../org/apache/lens/api/APIResult.Status.html#FAILED"><code>APIResult.Status.FAILED</code></a> in case of destroy
-         failure. APIResult with state <a href="../../../../../org/apache/lens/api/APIResult.Status.html#PARTIAL"><code>APIResult.Status.PARTIAL</code></a> in case of
-         partial destroy.</dd></dl>
+ destroy. APIResult with state <a href="../../../../../org/apache/lens/api/APIResult.Status.html#FAILED"><code>APIResult.Status.FAILED</code></a> in case of destroy
+ failure. APIResult with state <a href="../../../../../org/apache/lens/api/APIResult.Status.html#PARTIAL"><code>APIResult.Status.PARTIAL</code></a> in case of
+ partial destroy.</dd></dl>
 </li>
 </ul>
 <a name="getPreparedQuery(org.apache.lens.api.LensSessionHandle, java.lang.String)">
@@ -506,8 +506,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <div class="block">Destroy the prepared query specified by handle.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>sessionid</code> - The user session handle</dd><dd><code>prepareHandle</code> - The prepare handle</dd>
 <dt><span class="strong">Returns:</span></dt><dd>APIResult with state <a href="../../../../../org/apache/lens/api/APIResult.Status.html#SUCCEEDED"><code>APIResult.Status.SUCCEEDED</code></a> in case of successful
-         destroy. APIResult with state <a href="../../../../../org/apache/lens/api/APIResult.Status.html#FAILED"><code>APIResult.Status.FAILED</code></a> in case of
-         destroy failure.</dd></dl>
+ destroy. APIResult with state <a href="../../../../../org/apache/lens/api/APIResult.Status.html#FAILED"><code>APIResult.Status.FAILED</code></a> in case of
+ destroy failure.</dd></dl>
 </li>
 </ul>
 <a name="getStatus(org.apache.lens.api.LensSessionHandle, java.lang.String)">
@@ -534,8 +534,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <div class="block">Cancel the query specified by the handle.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>sessionid</code> - The user session handle</dd><dd><code>queryHandle</code> - The query handle</dd>
 <dt><span class="strong">Returns:</span></dt><dd>APIResult with state <a href="../../../../../org/apache/lens/api/APIResult.Status.html#SUCCEEDED"><code>APIResult.Status.SUCCEEDED</code></a> in case of successful
-         cancellation. APIResult with state <a href="../../../../../org/apache/lens/api/APIResult.Status.html#FAILED"><code>APIResult.Status.FAILED</code></a> in case of
-         cancellation failure.</dd></dl>
+ cancellation. APIResult with state <a href="../../../../../org/apache/lens/api/APIResult.Status.html#FAILED"><code>APIResult.Status.FAILED</code></a> in case of
+ cancellation failure.</dd></dl>
 </li>
 </ul>
 <a name="updateConf(org.apache.lens.api.LensSessionHandle, java.lang.String, org.apache.lens.api.LensConf)">
@@ -583,8 +583,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
                                 <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;queryName)</pre>
 <div class="block">Submit prepared query for execution.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>sessionid</code> - The session in which user is submitting the query. Any configuration set in the session will
-                      be picked up.</dd><dd><code>prepareHandle</code> - The Query to run</dd><dd><code>operation</code> - The operation on the query. Supported operations are
-                      <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#EXECUTE"><code>SubmitOp.EXECUTE</code></a> and <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#EXECUTE_WITH_TIMEOUT"><code>SubmitOp.EXECUTE_WITH_TIMEOUT</code></a></dd><dd><code>conf</code> - The configuration for the execution of query</dd><dd><code>timeoutmillis</code> - The timeout for the query, honored only in case of
+ be picked up.</dd><dd><code>prepareHandle</code> - The Query to run</dd><dd><code>operation</code> - The operation on the query. Supported operations are
+ <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#EXECUTE"><code>SubmitOp.EXECUTE</code></a> and <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#EXECUTE_WITH_TIMEOUT"><code>SubmitOp.EXECUTE_WITH_TIMEOUT</code></a></dd><dd><code>conf</code> - The configuration for the execution of query</dd><dd><code>timeoutmillis</code> - The timeout for the query, honored only in case of
  <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#EXECUTE_WITH_TIMEOUT"><code>SubmitOp.EXECUTE_WITH_TIMEOUT</code></a> operation</dd><dd><code>queryName</code> - human readable query name set by user (optional parameter)</dd>
 <dt><span class="strong">Returns:</span></dt><dd><a href="../../../../../org/apache/lens/api/query/QueryHandle.html" title="class in org.apache.lens.api.query"><code>QueryHandle</code></a> in case of {link org.apache.lens.api.query.SubmitOp#EXECUTE} operation.
  <a href="../../../../../org/apache/lens/api/query/QueryHandleWithResultSet.html" title="class in org.apache.lens.api.query"><code>QueryHandleWithResultSet</code></a> in case <a href="../../../../../org/apache/lens/api/query/SubmitOp.html#EXECUTE_WITH_TIMEOUT"><code>SubmitOp.EXECUTE_WITH_TIMEOUT</code></a> operation.</dd></dl>

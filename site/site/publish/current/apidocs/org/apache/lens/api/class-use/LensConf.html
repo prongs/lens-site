@@ -77,42 +77,46 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><a href="#org.apache.lens.api.query">org.apache.lens.api.query</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.apache.lens.client">org.apache.lens.client</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.apache.lens.ml.algo.api">org.apache.lens.ml.algo.api</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.apache.lens.ml.algo.spark">org.apache.lens.ml.algo.spark</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.apache.lens.ml.algo.spark.kmeans">org.apache.lens.ml.algo.spark.kmeans</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.apache.lens.regression.core.helpers">org.apache.lens.regression.core.helpers</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.apache.lens.server">org.apache.lens.server</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.apache.lens.server.api.query">org.apache.lens.server.api.query</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.apache.lens.server.query">org.apache.lens.server.query</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#org.apache.lens.server.session">org.apache.lens.server.session</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#org.apache.lens.server.ui">org.apache.lens.server.ui</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -121,6 +125,69 @@
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList"><a name="org.apache.lens.api.query">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../org/apache/lens/api/LensConf.html" title="class in org.apache.lens.api">LensConf</a> in <a href="../../../../../org/apache/lens/api/query/package-summary.html">org.apache.lens.api.query</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/lens/api/query/package-summary.html">org.apache.lens.api.query</a> that return <a href="../../../../../org/apache/lens/api/LensConf.html" title="class in org.apache.lens.api">LensConf</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/lens/api/LensConf.html" title="class in org.apache.lens.api">LensConf</a></code></td>
+<td class="colLast"><span class="strong">LensPreparedQuery.</span><code><strong><a href="../../../../../org/apache/lens/api/query/LensPreparedQuery.html#getConf()">getConf</a></strong>()</code>
+<div class="block">The conf.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/lens/api/LensConf.html" title="class in org.apache.lens.api">LensConf</a></code></td>
+<td class="colLast"><span class="strong">LensQuery.</span><code><strong><a href="../../../../../org/apache/lens/api/query/LensQuery.html#getQueryConf()">getQueryConf</a></strong>()</code>
+<div class="block">The query conf.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructors in <a href="../../../../../org/apache/lens/api/query/package-summary.html">org.apache.lens.api.query</a> with parameters of type <a href="../../../../../org/apache/lens/api/LensConf.html" title="class in org.apache.lens.api">LensConf</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/api/query/LensPreparedQuery.html#LensPreparedQuery(org.apache.lens.api.query.QueryPrepareHandle,%20java.lang.String,%20java.util.Date,%20java.lang.String,%20java.lang.String,%20java.lang.String,%20org.apache.lens.api.LensConf)">LensPreparedQuery</a></strong>(<a href="../../../../../org/apache/lens/api/query/QueryPrepareHandle.html" title="class in org.apache.lens.api.query">QueryPrepareHandle</a>&nbsp;prepareHandle,
+                 <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;userQuery,
+                 <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;preparedTime,
+                 <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;preparedUser,
+                 <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;selectedDriverClassName,
+                 <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;driverQuery,
+                 <a href="../../../../../org/apache/lens/api/LensConf.html" title="class in org.apache.lens.api">LensConf</a>&nbsp;conf)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/api/query/LensQuery.html#LensQuery(org.apache.lens.api.query.QueryHandle,%20java.lang.String,%20java.lang.String,%20org.apache.lens.api.Priority,%20boolean,%20java.lang.String,%20java.lang.String,%20org.apache.lens.api.query.QueryStatus,%20java.lang.String,%20java.lang.String,%20org.apache.lens.api.LensConf,%20long,%20long,%20long,%20long,%20long,%20long,%20java.lang.String)">LensQuery</a></strong>(<a href="../../../../../org/apache/lens/api/query/QueryHandle.html" title="class in org.apache.lens.api.query">QueryHandle</a>&nbsp;queryHandle,
+         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;userQuery,
+         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;submittedUser,
+         <a href="../../../../../org/apache/lens/api/Priority.html" title="enum in org.apache.lens.api">Priority</a>&nbsp;priority,
+         boolean&nbsp;isPersistent,
+         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;selectedDriverClassName,
+         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;driverQuery,
+         <a href="../../../../../org/apache/lens/api/query/QueryStatus.html" title="class in org.apache.lens.api.query">QueryStatus</a>&nbsp;status,
+         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;resultSetPath,
+         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;driverOpHandle,
+         <a href="../../../../../org/apache/lens/api/LensConf.html" title="class in org.apache.lens.api">LensConf</a>&nbsp;queryConf,
+         long&nbsp;submissionTime,
+         long&nbsp;launchTime,
+         long&nbsp;driverStartTime,
+         long&nbsp;driverFinishTime,
+         long&nbsp;finishTime,
+         long&nbsp;closedTime,
+         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;queryName)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="org.apache.lens.client">
 <!--   -->
 </a>
@@ -325,6 +392,21 @@
 <!--   -->
 </a>
 <h3>Uses of <a href="../../../../../org/apache/lens/api/LensConf.html" title="class in org.apache.lens.api">LensConf</a> in <a href="../../../../../org/apache/lens/server/api/query/package-summary.html">org.apache.lens.server.api.query</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../org/apache/lens/server/api/query/package-summary.html">org.apache.lens.server.api.query</a> that return <a href="../../../../../org/apache/lens/api/LensConf.html" title="class in org.apache.lens.api">LensConf</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/lens/api/LensConf.html" title="class in org.apache.lens.api">LensConf</a></code></td>
+<td class="colLast"><span class="strong">AbstractQueryContext.</span><code><strong><a href="../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getLensConf()">getLensConf</a></strong>()</code>
+<div class="block">The query conf.</div>
+</td>
+</tr>
+</tbody>
+</table>
 <table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
 <caption><span>Methods in <a href="../../../../../org/apache/lens/server/api/query/package-summary.html">org.apache.lens.server.api.query</a> with parameters of type <a href="../../../../../org/apache/lens/api/LensConf.html" title="class in org.apache.lens.api">LensConf</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>

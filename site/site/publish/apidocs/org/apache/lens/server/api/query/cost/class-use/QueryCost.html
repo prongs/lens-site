@@ -181,6 +181,10 @@
 <td class="colFirst"><code><a href="../../../../../../../../org/apache/lens/server/api/query/cost/QueryCost.html" title="interface in org.apache.lens.server.api.query.cost">QueryCost</a></code></td>
 <td class="colLast"><span class="strong">HiveDriver.</span><code><strong><a href="../../../../../../../../org/apache/lens/driver/hive/HiveDriver.html#estimate(org.apache.lens.server.api.query.AbstractQueryContext)">estimate</a></strong>(<a href="../../../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html" title="class in org.apache.lens.server.api.query">AbstractQueryContext</a>&nbsp;qctx)</code>&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../../org/apache/lens/server/api/query/cost/QueryCost.html" title="interface in org.apache.lens.server.api.query.cost">QueryCost</a></code></td>
+<td class="colLast"><span class="strong">HiveQueryPlan.</span><code><strong><a href="../../../../../../../../org/apache/lens/driver/hive/HiveQueryPlan.html#getCost()">getCost</a></strong>()</code>&nbsp;</td>
+</tr>
 </tbody>
 </table>
 <table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
@@ -266,12 +270,24 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../../org/apache/lens/server/api/query/cost/QueryCost.html" title="interface in org.apache.lens.server.api.query.cost">QueryCost</a></code></td>
-<td class="colLast"><span class="strong">DriverSelectorQueryContext.</span><code><strong><a href="../../../../../../../../org/apache/lens/server/api/query/DriverSelectorQueryContext.html#getDriverQueryCost(org.apache.lens.server.api.driver.LensDriver)">getDriverQueryCost</a></strong>(<a href="../../../../../../../../org/apache/lens/server/api/driver/LensDriver.html" title="interface in org.apache.lens.server.api.driver">LensDriver</a>&nbsp;driver)</code>&nbsp;</td>
+<td class="colLast"><span class="strong">DriverSelectorQueryContext.DriverQueryContext.</span><code><strong><a href="../../../../../../../../org/apache/lens/server/api/query/DriverSelectorQueryContext.DriverQueryContext.html#getDriverCost()">getDriverCost</a></strong>()</code>
+<div class="block">Driver's query cost</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../../org/apache/lens/server/api/query/cost/QueryCost.html" title="interface in org.apache.lens.server.api.query.cost">QueryCost</a></code></td>
+<td class="colLast"><span class="strong">DriverSelectorQueryContext.</span><code><strong><a href="../../../../../../../../org/apache/lens/server/api/query/DriverSelectorQueryContext.html#getDriverQueryCost(org.apache.lens.server.api.driver.LensDriver)">getDriverQueryCost</a></strong>(<a href="../../../../../../../../org/apache/lens/server/api/driver/LensDriver.html" title="interface in org.apache.lens.server.api.driver">LensDriver</a>&nbsp;driver)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../../org/apache/lens/server/api/query/cost/QueryCost.html" title="interface in org.apache.lens.server.api.query.cost">QueryCost</a></code></td>
 <td class="colLast"><span class="strong">AbstractQueryContext.</span><code><strong><a href="../../../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getDriverQueryCost(org.apache.lens.server.api.driver.LensDriver)">getDriverQueryCost</a></strong>(<a href="../../../../../../../../org/apache/lens/server/api/driver/LensDriver.html" title="interface in org.apache.lens.server.api.driver">LensDriver</a>&nbsp;driver)</code>
 <div class="block">Get query cost for the driver</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../../org/apache/lens/server/api/query/cost/QueryCost.html" title="interface in org.apache.lens.server.api.query.cost">QueryCost</a></code></td>
+<td class="colLast"><span class="strong">AbstractQueryContext.</span><code><strong><a href="../../../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getSelectedDriverQueryCost()">getSelectedDriverQueryCost</a></strong>()</code>
+<div class="block">The selected Driver query cost</div>
 </td>
 </tr>
 </tbody>
@@ -292,6 +308,18 @@
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="strong">AbstractQueryContext.</span><code><strong><a href="../../../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#setDriverCost(org.apache.lens.server.api.driver.LensDriver,%20org.apache.lens.server.api.query.cost.QueryCost)">setDriverCost</a></strong>(<a href="../../../../../../../../org/apache/lens/server/api/driver/LensDriver.html" title="interface in org.apache.lens.server.api.driver">LensDriver</a>&nbsp;driver,
              <a href="../../../../../../../../org/apache/lens/server/api/query/cost/QueryCost.html" title="interface in org.apache.lens.server.api.query.cost">QueryCost</a>&nbsp;cost)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">DriverSelectorQueryContext.DriverQueryContext.</span><code><strong><a href="../../../../../../../../org/apache/lens/server/api/query/DriverSelectorQueryContext.DriverQueryContext.html#setDriverCost(org.apache.lens.server.api.query.cost.QueryCost)">setDriverCost</a></strong>(<a href="../../../../../../../../org/apache/lens/server/api/query/cost/QueryCost.html" title="interface in org.apache.lens.server.api.query.cost">QueryCost</a>&nbsp;driverCost)</code>
+<div class="block">Driver's query cost</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">AbstractQueryContext.</span><code><strong><a href="../../../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#setSelectedDriverQueryCost(org.apache.lens.server.api.query.cost.QueryCost)">setSelectedDriverQueryCost</a></strong>(<a href="../../../../../../../../org/apache/lens/server/api/query/cost/QueryCost.html" title="interface in org.apache.lens.server.api.query.cost">QueryCost</a>&nbsp;selectedDriverQueryCost)</code>
+<div class="block">The selected Driver query cost</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -359,6 +387,17 @@
 <td class="colFirst"><code><a href="../../../../../../../../org/apache/lens/server/api/query/cost/QueryCost.html" title="interface in org.apache.lens.server.api.query.cost">QueryCost</a></code></td>
 <td class="colLast"><span class="strong">QueryCostCalculator.</span><code><strong><a href="../../../../../../../../org/apache/lens/server/api/query/cost/QueryCostCalculator.html#calculateCost(org.apache.lens.server.api.query.AbstractQueryContext,%20org.apache.lens.server.api.driver.LensDriver)">calculateCost</a></strong>(<a href="../../../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html" title="class in org.apache.lens.server.api.query">AbstractQueryContext</a>&nbsp;queryContext,
              <a href="../../../../../../../../org/apache/lens/server/api/driver/LensDriver.html" title="interface in org.apache.lens.server.api.driver">LensDriver</a>&nbsp;driver)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructors in <a href="../../../../../../../../org/apache/lens/server/api/query/cost/package-summary.html">org.apache.lens.server.api.query.cost</a> with parameters of type <a href="../../../../../../../../org/apache/lens/server/api/query/cost/QueryCost.html" title="interface in org.apache.lens.server.api.query.cost">QueryCost</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><strong><a href="../../../../../../../../org/apache/lens/server/api/query/cost/QueryCostTOBuilder.html#QueryCostTOBuilder(org.apache.lens.server.api.query.cost.QueryCost)">QueryCostTOBuilder</a></strong>(<a href="../../../../../../../../org/apache/lens/server/api/query/cost/QueryCost.html" title="interface in org.apache.lens.server.api.query.cost">QueryCost</a>&nbsp;cost)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>

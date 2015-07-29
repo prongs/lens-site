@@ -156,8 +156,16 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Comparabl
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/metadata/FactPartition.html#compareTo(org.apache.lens.cube.metadata.FactPartition)">compareTo</a></strong>(<a href="../../../../../org/apache/lens/cube/metadata/FactPartition.html" title="class in org.apache.lens.cube.metadata">FactPartition</a>&nbsp;o)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/metadata/FactPartition.html#equals(java.lang.Object)">equals</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/metadata/FactPartition.html#getAllTableWeights(com.google.common.collect.ImmutableMap)">getAllTableWeights</a></strong>(com.google.common.collect.ImmutableMap&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;tableWeights)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/lens/cube/metadata/FactPartition.html" title="class in org.apache.lens.cube.metadata">FactPartition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/metadata/FactPartition.html#getContainingPart()">getContainingPart</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
@@ -178,7 +186,23 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Comparabl
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/metadata/FactPartition.html#getPartCol()">getPartCol</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/metadata/FactPartition.html#getPartSpec()">getPartSpec</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/metadata/FactPartition.html#getPartString()">getPartString</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/lens/cube/metadata/UpdatePeriod.html" title="enum in org.apache.lens.cube.metadata">UpdatePeriod</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/metadata/FactPartition.html#getPeriod()">getPeriod</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/metadata/FactPartition.html#getStorageTables()">getStorageTables</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../org/apache/lens/cube/metadata/TimePartition.html" title="class in org.apache.lens.cube.metadata">TimePartition</a></code></td>
@@ -187,6 +211,22 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Comparabl
 <tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/metadata/FactPartition.html#hasContainingPart()">hasContainingPart</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/metadata/FactPartition.html#hashCode()">hashCode</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/metadata/FactPartition.html#isFound()">isFound</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/metadata/FactPartition.html#setContainingPart(org.apache.lens.cube.metadata.FactPartition)">setContainingPart</a></strong>(<a href="../../../../../org/apache/lens/cube/metadata/FactPartition.html" title="class in org.apache.lens.cube.metadata">FactPartition</a>&nbsp;containingPart)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/metadata/FactPartition.html#setFound(boolean)">setFound</a></strong>(boolean&nbsp;found)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
@@ -198,7 +238,7 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Comparabl
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long,%20int)" title="class or interface in java.lang">wait</a></code></li>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long,%20int)" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 </li>
 </ul>
@@ -345,10 +385,118 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Comparabl
 <a name="getAllTableWeights(com.google.common.collect.ImmutableMap)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getAllTableWeights</h4>
 <pre>public&nbsp;double&nbsp;getAllTableWeights(com.google.common.collect.ImmutableMap&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&gt;&nbsp;tableWeights)</pre>
+</li>
+</ul>
+<a name="equals(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="hashCode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;int&nbsp;hashCode()</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getPartCol()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPartCol</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getPartCol()</pre>
+</li>
+</ul>
+<a name="getPartSpec()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPartSpec</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;getPartSpec()</pre>
+</li>
+</ul>
+<a name="getStorageTables()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStorageTables</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getStorageTables()</pre>
+</li>
+</ul>
+<a name="getPeriod()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPeriod</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../../org/apache/lens/cube/metadata/UpdatePeriod.html" title="enum in org.apache.lens.cube.metadata">UpdatePeriod</a>&nbsp;getPeriod()</pre>
+</li>
+</ul>
+<a name="getContainingPart()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getContainingPart</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../../org/apache/lens/cube/metadata/FactPartition.html" title="class in org.apache.lens.cube.metadata">FactPartition</a>&nbsp;getContainingPart()</pre>
+</li>
+</ul>
+<a name="setContainingPart(org.apache.lens.cube.metadata.FactPartition)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setContainingPart</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setContainingPart(<a href="../../../../../org/apache/lens/cube/metadata/FactPartition.html" title="class in org.apache.lens.cube.metadata">FactPartition</a>&nbsp;containingPart)</pre>
+</li>
+</ul>
+<a name="isFound()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isFound</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;boolean&nbsp;isFound()</pre>
+</li>
+</ul>
+<a name="setFound(boolean)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setFound</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setFound(boolean&nbsp;found)</pre>
 </li>
 </ul>
 </li>

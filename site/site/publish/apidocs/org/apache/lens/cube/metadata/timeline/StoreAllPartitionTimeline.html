@@ -167,37 +167,53 @@ extends <a href="../../../../../../org/apache/lens/cube/metadata/timeline/Partit
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/cube/metadata/timeline/StoreAllPartitionTimeline.html#equals(java.lang.Object)">equals</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/cube/metadata/timeline/StoreAllPartitionTimeline.html#exists(org.apache.lens.cube.metadata.TimePartition)">exists</a></strong>(<a href="../../../../../../org/apache/lens/cube/metadata/TimePartition.html" title="class in org.apache.lens.cube.metadata">TimePartition</a>&nbsp;partition)</code>
 <div class="block">Checks partition existance</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/TreeSet.html?is-external=true" title="class or interface in java.util">TreeSet</a>&lt;<a href="../../../../../../org/apache/lens/cube/metadata/TimePartition.html" title="class in org.apache.lens.cube.metadata">TimePartition</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/cube/metadata/timeline/StoreAllPartitionTimeline.html#getAllPartitions()">getAllPartitions</a></strong>()</code>&nbsp;</td>
+</tr>
 <tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/cube/metadata/timeline/StoreAllPartitionTimeline.html#hashCode()">hashCode</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/cube/metadata/timeline/StoreAllPartitionTimeline.html#initFromProperties(java.util.Map)">initFromProperties</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;properties)</code>
 <div class="block">deserialize member variables from given map</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/cube/metadata/timeline/StoreAllPartitionTimeline.html#isConsistent()">isConsistent</a></strong>()</code>
 <div class="block">whether timeline is in consistent state</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/cube/metadata/timeline/StoreAllPartitionTimeline.html#isEmpty()">isEmpty</a></strong>()</code>
 <div class="block">Whether No partitions have been registered</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&lt;<a href="../../../../../../org/apache/lens/cube/metadata/TimePartition.html" title="class in org.apache.lens.cube.metadata">TimePartition</a>&gt;</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/cube/metadata/timeline/StoreAllPartitionTimeline.html#iterator()">iterator</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../org/apache/lens/cube/metadata/TimePartition.html" title="class in org.apache.lens.cube.metadata">TimePartition</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/cube/metadata/timeline/StoreAllPartitionTimeline.html#latest()">latest</a></strong>()</code>
 <div class="block">latest partition.</div>
 </td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/cube/metadata/timeline/StoreAllPartitionTimeline.html#setAllPartitions(java.util.TreeSet)">setAllPartitions</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/TreeSet.html?is-external=true" title="class or interface in java.util">TreeSet</a>&lt;<a href="../../../../../../org/apache/lens/cube/metadata/TimePartition.html" title="class in org.apache.lens.cube.metadata">TimePartition</a>&gt;&nbsp;allPartitions)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
@@ -205,20 +221,24 @@ extends <a href="../../../../../../org/apache/lens/cube/metadata/timeline/Partit
 <div class="block">serialize member objects as map</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/cube/metadata/timeline/StoreAllPartitionTimeline.html#toString()">toString</a></strong>()</code>&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods_inherited_from_class_org.apache.lens.cube.metadata.timeline.PartitionTimeline">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;org.apache.lens.cube.metadata.timeline.<a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html" title="class in org.apache.lens.cube.metadata.timeline">PartitionTimeline</a></h3>
-<code><a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html#addForBatchAddition(org.apache.lens.cube.metadata.TimePartition)">addForBatchAddition</a>, <a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html#commitBatchAdditions()">commitBatchAdditions</a>, <a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html#getLatestDate()">getLatestDate</a>, <a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html#init(org.apache.hadoop.hive.ql.metadata.Table)">init</a>, <a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html#updateTableParams(org.apache.hadoop.hive.ql.metadata.Table)">updateTableParams</a></code></li>
+<code><a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html#addForBatchAddition(org.apache.lens.cube.metadata.TimePartition)">addForBatchAddition</a>, <a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html#commitBatchAdditions()">commitBatchAdditions</a>, <a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html#getAll()">getAll</a>, <a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html#getLatestDate()">getLatestDate</a>, <a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html#getPartCol()">getPartCol</a>, <a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html#getStorageTableName()">getStorageTableName</a>, <a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html#getUpdatePeriod()">getUpdatePeriod</a>, <a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html#init(org.apache.hadoop.hive.ql.metadata.Table)">init</a>, <a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html#setAll(java.util.TreeSet)">setAll</a>, <a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html#updateTableParams(org.apache.hadoop.hive.ql.metadata.Table)">updateTableParams</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long,%20int)" title="class or interface in java.lang">wait</a></code></li>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long,%20int)" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 </li>
 </ul>
@@ -406,10 +426,72 @@ extends <a href="../../../../../../org/apache/lens/cube/metadata/timeline/Partit
 <a name="iterator()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>iterator</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&lt;<a href="../../../../../../org/apache/lens/cube/metadata/TimePartition.html" title="class in org.apache.lens.cube.metadata">TimePartition</a>&gt;&nbsp;iterator()</pre>
+</li>
+</ul>
+<a name="getAllPartitions()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAllPartitions</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/TreeSet.html?is-external=true" title="class or interface in java.util">TreeSet</a>&lt;<a href="../../../../../../org/apache/lens/cube/metadata/TimePartition.html" title="class in org.apache.lens.cube.metadata">TimePartition</a>&gt;&nbsp;getAllPartitions()</pre>
+</li>
+</ul>
+<a name="setAllPartitions(java.util.TreeSet)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAllPartitions</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setAllPartitions(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/TreeSet.html?is-external=true" title="class or interface in java.util">TreeSet</a>&lt;<a href="../../../../../../org/apache/lens/cube/metadata/TimePartition.html" title="class in org.apache.lens.cube.metadata">TimePartition</a>&gt;&nbsp;allPartitions)</pre>
+</li>
+</ul>
+<a name="equals(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html#equals(java.lang.Object)">equals</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html" title="class in org.apache.lens.cube.metadata.timeline">PartitionTimeline</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="hashCode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;int&nbsp;hashCode()</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html#hashCode()">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html" title="class in org.apache.lens.cube.metadata.timeline">PartitionTimeline</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="toString()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>toString</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html#toString()">toString</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html" title="class in org.apache.lens.cube.metadata.timeline">PartitionTimeline</a></code></dd>
+</dl>
 </li>
 </ul>
 </li>

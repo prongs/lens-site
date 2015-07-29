@@ -109,17 +109,9 @@
       <h2>Example XML</h2>
       <code class="prettyprint lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;queryPlan&gt;
-  &lt;error&gt;...&lt;/error&gt;
-  &lt;execMode&gt;...&lt;/execMode&gt;
   &lt;scanMode&gt;...&lt;/scanMode&gt;
   &lt;errorMsg&gt;...&lt;/errorMsg&gt;
-  &lt;queryCost&gt;
-    &lt;estimatedExecTimeMillis&gt;...&lt;/estimatedExecTimeMillis&gt;
-    &lt;estimatedResourceUsage&gt;...&lt;/estimatedResourceUsage&gt;
-    &lt;type&gt;...&lt;/type&gt;
-  &lt;/queryCost&gt;
-  &lt;planString&gt;...&lt;/planString&gt;
-  &lt;hasSubQuery&gt;...&lt;/hasSubQuery&gt;
+  &lt;error&gt;...&lt;/error&gt;
   &lt;tablesQueried&gt;
     &lt;tablesQueried&gt;...&lt;/tablesQueried&gt;
     &lt;tablesQueried&gt;...&lt;/tablesQueried&gt;
@@ -128,24 +120,32 @@
   &lt;prepareHandle&gt;
     &lt;prepareHandleId&gt;...&lt;/prepareHandleId&gt;
   &lt;/prepareHandle&gt;
+  &lt;hasSubQuery&gt;...&lt;/hasSubQuery&gt;
+  &lt;execMode&gt;...&lt;/execMode&gt;
+  &lt;queryCost&gt;
+    &lt;estimatedExecTimeMillis&gt;...&lt;/estimatedExecTimeMillis&gt;
+    &lt;type&gt;...&lt;/type&gt;
+    &lt;estimatedResourceUsage&gt;...&lt;/estimatedResourceUsage&gt;
+  &lt;/queryCost&gt;
+  &lt;planString&gt;...&lt;/planString&gt;
 &lt;/queryPlan&gt;</code>
       <h2>Example JSON</h2>
       <code class="prettyprint lang-js">{
-  &quot;error&quot; : false,
-  &quot;execMode&quot; : &quot;...&quot;,
   &quot;scanMode&quot; : &quot;...&quot;,
   &quot;errorMsg&quot; : &quot;...&quot;,
-  &quot;queryCost&quot; : {
-    &quot;estimatedExecTimeMillis&quot; : ...,
-    &quot;estimatedResourceUsage&quot; : ...,
-    &quot;type&quot; : &quot;LOW&quot;
-  },
-  &quot;planString&quot; : &quot;...&quot;,
-  &quot;hasSubQuery&quot; : false,
+  &quot;error&quot; : false,
   &quot;tablesQueried&quot; : [ &quot;...&quot;, ... ],
   &quot;prepareHandle&quot; : {
     &quot;prepareHandleId&quot; : &quot;...&quot;
-  }
+  },
+  &quot;hasSubQuery&quot; : false,
+  &quot;execMode&quot; : &quot;...&quot;,
+  &quot;queryCost&quot; : {
+    &quot;estimatedExecTimeMillis&quot; : ...,
+    &quot;type&quot; : &quot;LOW&quot;,
+    &quot;estimatedResourceUsage&quot; : ...
+  },
+  &quot;planString&quot; : &quot;...&quot;
 }</code>
 
       <div class="clear" />

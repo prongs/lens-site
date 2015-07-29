@@ -104,7 +104,7 @@
 <pre>public class <span class="strong">QueryStatus</span>
 extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></pre>
-<div class="block">The Class QueryStatus.</div>
+<div class="block">Instantiates a new query status.</div>
 <dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../serialized-form.html#org.apache.lens.api.query.QueryStatus">Serialized Form</a></dd></dl>
 </li>
 </ul>
@@ -145,7 +145,13 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><strong><a href="../../../../../org/apache/lens/api/query/QueryStatus.html#QueryStatus()">QueryStatus</a></strong>()</code>&nbsp;</td>
+<td class="colOne"><code><strong><a href="../../../../../org/apache/lens/api/query/QueryStatus.html#QueryStatus(double,%20org.apache.lens.api.query.QueryStatus.Status,%20java.lang.String,%20boolean,%20java.lang.String,%20java.lang.String,%20org.apache.lens.api.result.LensErrorTO)">QueryStatus</a></strong>(double&nbsp;progress,
+           <a href="../../../../../org/apache/lens/api/query/QueryStatus.Status.html" title="enum in org.apache.lens.api.query">QueryStatus.Status</a>&nbsp;status,
+           <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;statusMessage,
+           boolean&nbsp;isResultSetAvailable,
+           <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;progressMessage,
+           <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;errorMessage,
+           <a href="../../../../../org/apache/lens/api/result/LensErrorTO.html" title="class in org.apache.lens.api.result">LensErrorTO</a>&nbsp;lensErrorTO)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -172,7 +178,43 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/api/query/QueryStatus.html#getErrorMessage()">getErrorMessage</a></strong>()</code>
+<div class="block">The error message.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/api/query/QueryStatus.html#getLensErrorTOErrorMsg()">getLensErrorTOErrorMsg</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/api/query/QueryStatus.html#getProgress()">getProgress</a></strong>()</code>
+<div class="block">The progress.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/api/query/QueryStatus.html#getProgressMessage()">getProgressMessage</a></strong>()</code>
+<div class="block">The progress message.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/lens/api/query/QueryStatus.Status.html" title="enum in org.apache.lens.api.query">QueryStatus.Status</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/api/query/QueryStatus.html#getStatus()">getStatus</a></strong>()</code>
+<div class="block">The status.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/api/query/QueryStatus.html#getStatusMessage()">getStatusMessage</a></strong>()</code>
+<div class="block">The status message.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/api/query/QueryStatus.html#isResultSetAvailable()">isResultSetAvailable</a></strong>()</code>
+<div class="block">The is result set available.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -200,6 +242,18 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/api/query/QueryStatus.html#running()">running</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/api/query/QueryStatus.html#setErrorMessage(java.lang.String)">setErrorMessage</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;errorMessage)</code>
+<div class="block">The error message.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/api/query/QueryStatus.html#setProgressMessage(java.lang.String)">setProgressMessage</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;progressMessage)</code>
+<div class="block">The progress message.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/api/query/QueryStatus.html#toString()">toString</a></strong>()</code>&nbsp;</td>
 </tr>
@@ -225,13 +279,21 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="QueryStatus()">
+<a name="QueryStatus(double, org.apache.lens.api.query.QueryStatus.Status, java.lang.String, boolean, java.lang.String, java.lang.String, org.apache.lens.api.result.LensErrorTO)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>QueryStatus</h4>
-<pre>public&nbsp;QueryStatus()</pre>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/beans/ConstructorProperties.html?is-external=true" title="class or interface in java.beans">@ConstructorProperties</a>(<a href="http://docs.oracle.com/javase/7/docs/api/java/beans/ConstructorProperties.html?is-external=true#value()" title="class or interface in java.beans">value</a>={"progress","status","statusMessage","isResultSetAvailable","progressMessage","errorMessage","lensErrorTO"})
+<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;QueryStatus(double&nbsp;progress,
+                                                     <a href="../../../../../org/apache/lens/api/query/QueryStatus.Status.html" title="enum in org.apache.lens.api.query">QueryStatus.Status</a>&nbsp;status,
+                                                     <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;statusMessage,
+                                                     boolean&nbsp;isResultSetAvailable,
+                                                     <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;progressMessage,
+                                                     <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;errorMessage,
+                                                     <a href="../../../../../org/apache/lens/api/result/LensErrorTO.html" title="class in org.apache.lens.api.result">LensErrorTO</a>&nbsp;lensErrorTO)</pre>
 </li>
 </ul>
 </li>
@@ -328,10 +390,98 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializabl
 <a name="getLensErrorTOErrorMsg()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getLensErrorTOErrorMsg</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getLensErrorTOErrorMsg()</pre>
+</li>
+</ul>
+<a name="getProgress()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProgress</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;double&nbsp;getProgress()</pre>
+<div class="block">The progress.</div>
+</li>
+</ul>
+<a name="getStatus()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStatus</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../../org/apache/lens/api/query/QueryStatus.Status.html" title="enum in org.apache.lens.api.query">QueryStatus.Status</a>&nbsp;getStatus()</pre>
+<div class="block">The status.</div>
+</li>
+</ul>
+<a name="getStatusMessage()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStatusMessage</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getStatusMessage()</pre>
+<div class="block">The status message.</div>
+</li>
+</ul>
+<a name="isResultSetAvailable()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isResultSetAvailable</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;boolean&nbsp;isResultSetAvailable()</pre>
+<div class="block">The is result set available.</div>
+</li>
+</ul>
+<a name="getProgressMessage()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProgressMessage</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getProgressMessage()</pre>
+<div class="block">The progress message.</div>
+</li>
+</ul>
+<a name="setProgressMessage(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setProgressMessage</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setProgressMessage(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;progressMessage)</pre>
+<div class="block">The progress message.</div>
+</li>
+</ul>
+<a name="getErrorMessage()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getErrorMessage</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getErrorMessage()</pre>
+<div class="block">The error message.</div>
+</li>
+</ul>
+<a name="setErrorMessage(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setErrorMessage</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setErrorMessage(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;errorMessage)</pre>
+<div class="block">The error message.</div>
 </li>
 </ul>
 </li>

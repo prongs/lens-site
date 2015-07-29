@@ -240,8 +240,8 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
                               long&nbsp;toDate)</pre>
 <div class="block">Get all the queries in the query server; can be filtered with state and user.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>publicId</code> - The public id of the session in which user is working</dd><dd><code>state</code> - If any state is passed, all the queries in that state will be returned, otherwise all queries will
-                  be returned. Possible states are <a href="../../../../../org/apache/lens/api/query/QueryStatus.Status.html#values()"><code>QueryStatus.Status.values()</code></a></dd><dd><code>user</code> - return queries matching the user. If set to "all", return queries of all users. By default,
-                  returns queries of the current user.</dd><dd><code>queryName</code> - human readable query name set by user (optional)</dd><dd><code>fromDate</code> - the from date</dd><dd><code>toDate</code> - the to date</dd>
+ be returned. Possible states are <a href="../../../../../org/apache/lens/api/query/QueryStatus.Status.html#values()"><code>QueryStatus.Status.values()</code></a></dd><dd><code>user</code> - return queries matching the user. If set to "all", return queries of all users. By default,
+ returns queries of the current user.</dd><dd><code>queryName</code> - human readable query name set by user (optional)</dd><dd><code>fromDate</code> - the from date</dd><dd><code>toDate</code> - the to date</dd>
 <dt><span class="strong">Returns:</span></dt><dd>List of <a href="../../../../../org/apache/lens/api/query/QueryHandle.html" title="class in org.apache.lens.api.query"><code>QueryHandle</code></a> objects</dd></dl>
 </li>
 </ul>
@@ -256,7 +256,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
                       <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;queryName)</pre>
 <div class="block">Submit the query for explain or execute or execute with a timeout.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>publicId</code> - The public id of the session in which user is submitting the query. Any configuration set in the
-                  session will be picked up.</dd><dd><code>query</code> - The query to run</dd><dd><code>queryName</code> - human readable query name set by user (optional)</dd>
+ session will be picked up.</dd><dd><code>query</code> - The query to run</dd><dd><code>queryName</code> - human readable query name set by user (optional)</dd>
 <dt><span class="strong">Returns:</span></dt><dd><a href="../../../../../org/apache/lens/api/query/QueryHandle.html" title="class in org.apache.lens.api.query"><code>QueryHandle</code></a></dd></dl>
 </li>
 </ul>

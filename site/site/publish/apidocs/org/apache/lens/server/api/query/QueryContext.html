@@ -196,16 +196,52 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Comparabl
 <td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#finished()">finished</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#getClosedTime()">getClosedTime</a></strong>()</code>
+<div class="block">The closed time.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#getClusterUser()">getClusterUser</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#getCompressOutput()">getCompressOutput</a></strong>()</code>&nbsp;</td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#getDriverOpHandle()">getDriverOpHandle</a></strong>()</code>
+<div class="block">The driver op handle.</div>
+</td>
+</tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../org/apache/lens/server/api/driver/DriverQueryStatus.html" title="class in org.apache.lens.server.api.driver">DriverQueryStatus</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#getDriverStatus()">getDriverStatus</a></strong>()</code>
+<div class="block">The driver status.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#getEndTime()">getEndTime</a></strong>()</code>
+<div class="block">The end time.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#getHdfsoutPath()">getHdfsoutPath</a></strong>()</code>
+<div class="block">The hdfsout path.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>org.apache.hadoop.fs.Path</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#getHDFSResultDir()">getHDFSResultDir</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#getLaunchTime()">getLaunchTime</a></strong>()</code>
+<div class="block">The launch time.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
@@ -222,8 +258,32 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Comparabl
 <td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#getOuptutFileExtn()">getOuptutFileExtn</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../org/apache/lens/api/Priority.html" title="enum in org.apache.lens.api">Priority</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#getPriority()">getPriority</a></strong>()</code>
+<div class="block">The priority.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../org/apache/lens/api/query/QueryHandle.html" title="class in org.apache.lens.api.query">QueryHandle</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#getQueryHandle()">getQueryHandle</a></strong>()</code>
+<div class="block">The query handle.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#getQueryHandleString()">getQueryHandleString</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#getQueryName()">getQueryName</a></strong>()</code>
+<div class="block">The query name.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../org/apache/lens/server/api/query/QueryOutputFormatter.html" title="interface in org.apache.lens.server.api.query">QueryOutputFormatter</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#getQueryOutputFormatter()">getQueryOutputFormatter</a></strong>()</code>
+<div class="block">The query output formatter.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
@@ -242,12 +302,48 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Comparabl
 <td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#getResultSetParentDir()">getResultSetParentDir</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#getResultSetPath()">getResultSetPath</a></strong>()</code>
+<div class="block">The result set path.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>com.google.common.collect.ImmutableSet&lt;<a href="../../../../../../org/apache/lens/server/api/query/constraint/QueryLaunchingConstraint.html" title="interface in org.apache.lens.server.api.query.constraint">QueryLaunchingConstraint</a>&gt;</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#getSelectedDriverQueryConstraints()">getSelectedDriverQueryConstraints</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>com.google.common.collect.ImmutableSet&lt;<a href="../../../../../../org/apache/lens/server/api/query/collect/WaitingQueriesSelectionPolicy.html" title="interface in org.apache.lens.server.api.query.collect">WaitingQueriesSelectionPolicy</a>&gt;</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#getSelectedDriverSelectionPolicies()">getSelectedDriverSelectionPolicies</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../org/apache/lens/api/query/QueryStatus.html" title="class in org.apache.lens.api.query">QueryStatus</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#getStatus()">getStatus</a></strong>()</code>
+<div class="block">The status.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>long</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#getSubmissionTime()">getSubmissionTime</a></strong>()</code>
+<div class="block">The submission time.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#isDriverPersistent()">isDriverPersistent</a></strong>()</code>
+<div class="block">The is driver persistent.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#isFinishedQueryPersisted()">isFinishedQueryPersisted</a></strong>()</code>
+<div class="block">The finished query persisted.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#isPersistent()">isPersistent</a></strong>()</code>
+<div class="block">The is persistent.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -264,6 +360,66 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Comparabl
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#running()">running</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#setClosedTime(long)">setClosedTime</a></strong>(long&nbsp;closedTime)</code>
+<div class="block">The closed time.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#setDriverOpHandle(java.lang.String)">setDriverOpHandle</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;driverOpHandle)</code>
+<div class="block">The driver op handle.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#setEndTime(long)">setEndTime</a></strong>(long&nbsp;endTime)</code>
+<div class="block">The end time.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#setFinishedQueryPersisted(boolean)">setFinishedQueryPersisted</a></strong>(boolean&nbsp;finishedQueryPersisted)</code>
+<div class="block">The finished query persisted.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#setHdfsoutPath(java.lang.String)">setHdfsoutPath</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;hdfsoutPath)</code>
+<div class="block">The hdfsout path.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#setLaunchTime(long)">setLaunchTime</a></strong>(long&nbsp;launchTime)</code>
+<div class="block">The launch time.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#setQueryHandle(org.apache.lens.api.query.QueryHandle)">setQueryHandle</a></strong>(<a href="../../../../../../org/apache/lens/api/query/QueryHandle.html" title="class in org.apache.lens.api.query">QueryHandle</a>&nbsp;queryHandle)</code>
+<div class="block">The query handle.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#setQueryName(java.lang.String)">setQueryName</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;queryName)</code>
+<div class="block">The query name.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#setQueryOutputFormatter(org.apache.lens.server.api.query.QueryOutputFormatter)">setQueryOutputFormatter</a></strong>(<a href="../../../../../../org/apache/lens/server/api/query/QueryOutputFormatter.html" title="interface in org.apache.lens.server.api.query">QueryOutputFormatter</a>&nbsp;queryOutputFormatter)</code>
+<div class="block">The query output formatter.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/query/QueryContext.html#setResultSetPath(java.lang.String)">setResultSetPath</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;resultSetPath)</code>
+<div class="block">The result set path.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -307,7 +463,7 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Comparabl
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;org.apache.lens.server.api.query.<a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html" title="class in org.apache.lens.server.api.query">AbstractQueryContext</a></h3>
-<code><a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#clearTransientStateAfterCompleted()">clearTransientStateAfterCompleted</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#clearTransientStateAfterLaunch()">clearTransientStateAfterLaunch</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#estimateCostForDrivers()">estimateCostForDrivers</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getDatabase()">getDatabase</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getDriverConf(org.apache.lens.server.api.driver.LensDriver)">getDriverConf</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getDriverEstimateRunnables()">getDriverEstimateRunnables</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getDriverQuery(org.apache.lens.server.api.driver.LensDriver)">getDriverQuery</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getDriverQueryCost(org.apache.lens.server.api.driver.LensDriver)">getDriverQueryCost</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getDriverRewriteError(org.apache.lens.server.api.driver.LensDriver)">getDriverRewriteError</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getDriverRewriterPlan(org.apache.lens.server.api.driver.LensDriver)">getDriverRewriterPlan</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getFinalDriverQuery(org.apache.lens.server.api.driver.LensDriver)">getFinalDriverQuery</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getHiveConf()">getHiveConf</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getSelectedDriver()">getSelectedDriver</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getSelectedDriverConf()">getSelectedDriverConf</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getSelectedDriverQuery()">getSelectedDriverQuery</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getSelectedDriverQueryPlan()">getSelectedDriverQueryPlan</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getTableWeights(org.apache.lens.server.api.driver.LensDriver)">getTableWeights</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#initTransientState()">initTransientState</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#setDriverCost(org.apache.lens.server.api.driver.LensDriver,%20org.apache.lens.server.api.query.cost.QueryCost)">setDriverCost</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#setDriverQueries(java.util.Map)">setDriverQueries</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#setDriverQuery(org.apache.lens.server.api.driver.LensDriver,%20java.lang.String)">setDriverQuery</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#setDriverRewriteError(org.apache.lens.server.api.driver.LensDriver,%20java.lang.Exception)">setDriverRewriteError</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#setFinalDriverQuery(org.apache.lens.server.api.driver.LensDriver,%20java.lang.String)">setFinalDriverQuery</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#setSelectedDriver(org.apache.lens.server.api.driver.LensDriver)">setSelectedDriver</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#setSelectedDriverQuery(java.lang.String)">setSelectedDriverQuery</a></code></li>
+<code><a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#clearTransientStateAfterCompleted()">clearTransientStateAfterCompleted</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#clearTransientStateAfterLaunch()">clearTransientStateAfterLaunch</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#estimateCostForDrivers()">estimateCostForDrivers</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getConf()">getConf</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getDatabase()">getDatabase</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getDriverConf(org.apache.lens.server.api.driver.LensDriver)">getDriverConf</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getDriverContext()">getDriverContext</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getDriverEstimateRunnables()">getDriverEstimateRunnables</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getDriverQuery(org.apache.lens.server.api.driver.LensDriver)">getDriverQuery</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getDriverQueryCost(org.apache.lens.server.api.driver.LensDriver)">getDriverQueryCost</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getDriverRewriteError(org.apache.lens.server.api.driver.LensDriver)">getDriverRewriteError</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getDriverRewriterPlan(org.apache.lens.server.api.driver.LensDriver)">getDriverRewriterPlan</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getFinalDriverQuery(org.apache.lens.server.api.driver.LensDriver)">getFinalDriverQuery</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getHiveConf()">getHiveConf</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getLensConf()">getLensConf</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getLensSessionIdentifier()">getLensSessionIdentifier</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getPhase1RewrittenQuery()">getPhase1RewrittenQuery</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getSelectedDriver()">getSelectedDriver</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getSelectedDriverConf()">getSelectedDriverConf</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getSelectedDriverQuery()">getSelectedDriverQuery</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getSelectedDriverQueryCost()">getSelectedDriverQueryCost</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getSelectedDriverQueryPlan()">getSelectedDriverQueryPlan</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getSubmittedUser()">getSubmittedUser</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getTableWeights(org.apache.lens.server.api.driver.LensDriver)">getTableWeights</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getUserQuery()">getUserQuery</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#initTransientState()">initTransientState</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#isDriverQueryExplicitlySet()">isDriverQueryExplicitlySet</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#isOlapQuery()">isOlapQuery</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#setConf(org.apache.hadoop.conf.Configuration)">setConf</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#setDriverContext(org.apache.lens.server.api.query.DriverSelectorQueryContext)">setDriverContext</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#setDriverCost(org.apache.lens.server.api.driver.LensDriver,%20org.apache.lens.server.api.query.cost.QueryCost)">setDriverCost</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#setDriverQueries(java.util.Map)">setDriverQueries</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#setDriverQuery(org.apache.lens.server.api.driver.LensDriver,%20java.lang.String)">setDriverQuery</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#setDriverRewriteError(org.apache.lens.server.api.driver.LensDriver,%20java.lang.Exception)">setDriverRewriteError</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#setFinalDriverQuery(org.apache.lens.server.api.driver.LensDriver,%20java.lang.String)">setFinalDriverQuery</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#setLensSessionIdentifier(java.lang.String)">setLensSessionIdentifier</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#setOlapQuery(boolean)">setOlapQuery</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#setPhase1RewrittenQuery(java.lang.String)">setPhase1RewrittenQuery</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#setSelectedDriver(org.apache.lens.server.api.driver.LensDriver)">setSelectedDriver</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#setSelectedDriverQuery(java.lang.String)">setSelectedDriverQuery</a>, <a href="../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#setSelectedDriverQueryCost(org.apache.lens.server.api.query.cost.QueryCost)">setSelectedDriverQueryCost</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
@@ -638,10 +794,296 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Comparabl
 <a name="getSelectedDriverSelectionPolicies()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getSelectedDriverSelectionPolicies</h4>
 <pre>public&nbsp;com.google.common.collect.ImmutableSet&lt;<a href="../../../../../../org/apache/lens/server/api/query/collect/WaitingQueriesSelectionPolicy.html" title="interface in org.apache.lens.server.api.query.collect">WaitingQueriesSelectionPolicy</a>&gt;&nbsp;getSelectedDriverSelectionPolicies()</pre>
+</li>
+</ul>
+<a name="getQueryHandle()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getQueryHandle</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../../../org/apache/lens/api/query/QueryHandle.html" title="class in org.apache.lens.api.query">QueryHandle</a>&nbsp;getQueryHandle()</pre>
+<div class="block">The query handle.</div>
+</li>
+</ul>
+<a name="setQueryHandle(org.apache.lens.api.query.QueryHandle)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setQueryHandle</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setQueryHandle(<a href="../../../../../../org/apache/lens/api/query/QueryHandle.html" title="class in org.apache.lens.api.query">QueryHandle</a>&nbsp;queryHandle)</pre>
+<div class="block">The query handle.</div>
+</li>
+</ul>
+<a name="getPriority()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPriority</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../../../org/apache/lens/api/Priority.html" title="enum in org.apache.lens.api">Priority</a>&nbsp;getPriority()</pre>
+<div class="block">The priority.</div>
+</li>
+</ul>
+<a name="isPersistent()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isPersistent</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;boolean&nbsp;isPersistent()</pre>
+<div class="block">The is persistent.</div>
+</li>
+</ul>
+<a name="isDriverPersistent()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isDriverPersistent</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;boolean&nbsp;isDriverPersistent()</pre>
+<div class="block">The is driver persistent.</div>
+</li>
+</ul>
+<a name="getStatus()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStatus</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../../../org/apache/lens/api/query/QueryStatus.html" title="class in org.apache.lens.api.query">QueryStatus</a>&nbsp;getStatus()</pre>
+<div class="block">The status.</div>
+</li>
+</ul>
+<a name="getResultSetPath()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getResultSetPath</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getResultSetPath()</pre>
+<div class="block">The result set path.</div>
+</li>
+</ul>
+<a name="setResultSetPath(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setResultSetPath</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setResultSetPath(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;resultSetPath)</pre>
+<div class="block">The result set path.</div>
+</li>
+</ul>
+<a name="getHdfsoutPath()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHdfsoutPath</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getHdfsoutPath()</pre>
+<div class="block">The hdfsout path.</div>
+</li>
+</ul>
+<a name="setHdfsoutPath(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setHdfsoutPath</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setHdfsoutPath(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;hdfsoutPath)</pre>
+<div class="block">The hdfsout path.</div>
+</li>
+</ul>
+<a name="getSubmissionTime()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSubmissionTime</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;long&nbsp;getSubmissionTime()</pre>
+<div class="block">The submission time.</div>
+</li>
+</ul>
+<a name="getLaunchTime()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLaunchTime</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;long&nbsp;getLaunchTime()</pre>
+<div class="block">The launch time.</div>
+</li>
+</ul>
+<a name="setLaunchTime(long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setLaunchTime</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setLaunchTime(long&nbsp;launchTime)</pre>
+<div class="block">The launch time.</div>
+</li>
+</ul>
+<a name="getEndTime()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEndTime</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;long&nbsp;getEndTime()</pre>
+<div class="block">The end time.</div>
+</li>
+</ul>
+<a name="setEndTime(long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setEndTime</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setEndTime(long&nbsp;endTime)</pre>
+<div class="block">The end time.</div>
+</li>
+</ul>
+<a name="getClosedTime()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getClosedTime</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;long&nbsp;getClosedTime()</pre>
+<div class="block">The closed time.</div>
+</li>
+</ul>
+<a name="setClosedTime(long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setClosedTime</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setClosedTime(long&nbsp;closedTime)</pre>
+<div class="block">The closed time.</div>
+</li>
+</ul>
+<a name="getDriverOpHandle()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDriverOpHandle</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getDriverOpHandle()</pre>
+<div class="block">The driver op handle.</div>
+</li>
+</ul>
+<a name="setDriverOpHandle(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setDriverOpHandle</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setDriverOpHandle(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;driverOpHandle)</pre>
+<div class="block">The driver op handle.</div>
+</li>
+</ul>
+<a name="getDriverStatus()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDriverStatus</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../../../org/apache/lens/server/api/driver/DriverQueryStatus.html" title="class in org.apache.lens.server.api.driver">DriverQueryStatus</a>&nbsp;getDriverStatus()</pre>
+<div class="block">The driver status.</div>
+</li>
+</ul>
+<a name="getQueryOutputFormatter()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getQueryOutputFormatter</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../../../org/apache/lens/server/api/query/QueryOutputFormatter.html" title="interface in org.apache.lens.server.api.query">QueryOutputFormatter</a>&nbsp;getQueryOutputFormatter()</pre>
+<div class="block">The query output formatter.</div>
+</li>
+</ul>
+<a name="setQueryOutputFormatter(org.apache.lens.server.api.query.QueryOutputFormatter)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setQueryOutputFormatter</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setQueryOutputFormatter(<a href="../../../../../../org/apache/lens/server/api/query/QueryOutputFormatter.html" title="interface in org.apache.lens.server.api.query">QueryOutputFormatter</a>&nbsp;queryOutputFormatter)</pre>
+<div class="block">The query output formatter.</div>
+</li>
+</ul>
+<a name="isFinishedQueryPersisted()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isFinishedQueryPersisted</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;boolean&nbsp;isFinishedQueryPersisted()</pre>
+<div class="block">The finished query persisted.</div>
+</li>
+</ul>
+<a name="setFinishedQueryPersisted(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setFinishedQueryPersisted</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setFinishedQueryPersisted(boolean&nbsp;finishedQueryPersisted)</pre>
+<div class="block">The finished query persisted.</div>
+</li>
+</ul>
+<a name="getQueryName()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getQueryName</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getQueryName()</pre>
+<div class="block">The query name.</div>
+</li>
+</ul>
+<a name="setQueryName(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setQueryName</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setQueryName(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;queryName)</pre>
+<div class="block">The query name.</div>
 </li>
 </ul>
 </li>

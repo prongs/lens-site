@@ -105,17 +105,17 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
  </p>
  Example -
  <pre>
-   LensRDDClient client = new LensRDDClient(javaSparkContext);
-   QueryHandle query = client.createLensRDDAsync("SELECT msr1 from TEST_CUBE WHERE ...", conf);
+ LensRDDClient client = new LensRDDClient(javaSparkContext);
+ QueryHandle query = client.createLensRDDAsync("SELECT msr1 from TEST_CUBE WHERE ...", conf);
 
-   while (!client.isReadyForRDD(query)) {
-     Thread.sleep(1000);
-   }
+ while (!client.isReadyForRDD(query)) {
+ Thread.sleep(1000);
+ }
 
-   JavaRDD&lt;ResultRow&gt; rdd = client.getRDD(query).toJavaRDD();
+ JavaRDD&lt;ResultRow&gt; rdd = client.getRDD(query).toJavaRDD();
 
-   // Consume RDD here -
-   rdd.map(...);
+ // Consume RDD here -
+ rdd.map(...);
  </pre>
  <p>
  Alternatively in blocking mode

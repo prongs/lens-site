@@ -214,6 +214,16 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.ht
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/error/LensException.html#getErrorCode()">getErrorCode</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../org/apache/lens/api/result/LensAPIResult.html" title="class in org.apache.lens.api.result">LensAPIResult</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/error/LensException.html#getLensAPIResult()">getLensAPIResult</a></strong>()</code>
+<div class="block">The lensResponse prepared by <a href="../../../../../../org/apache/lens/server/api/error/LensException.html#buildLensErrorResponse(org.apache.lens.api.error.ErrorCollection,%20java.lang.String,%20java.lang.String)"><code>buildLensErrorResponse(ErrorCollection, String, String)</code></a></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/error/LensException.html#hashCode()">hashCode</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -403,10 +413,31 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.ht
 <a name="wrap(java.lang.Exception)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>wrap</h4>
 <pre>public static&nbsp;<a href="../../../../../../org/apache/lens/server/api/error/LensException.html" title="class in org.apache.lens.server.api.error">LensException</a>&nbsp;wrap(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a>&nbsp;e)</pre>
+</li>
+</ul>
+<a name="getErrorCode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getErrorCode</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;int&nbsp;getErrorCode()</pre>
+</li>
+</ul>
+<a name="getLensAPIResult()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getLensAPIResult</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../../../org/apache/lens/api/result/LensAPIResult.html" title="class in org.apache.lens.api.result">LensAPIResult</a>&nbsp;getLensAPIResult()</pre>
+<div class="block">The lensResponse prepared by <a href="../../../../../../org/apache/lens/server/api/error/LensException.html#buildLensErrorResponse(org.apache.lens.api.error.ErrorCollection,%20java.lang.String,%20java.lang.String)"><code>buildLensErrorResponse(ErrorCollection, String, String)</code></a></div>
 </li>
 </ul>
 </li>

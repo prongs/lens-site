@@ -223,15 +223,27 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html" title="class in org.apache.lens.server.api.driver">DriverQueryPlan</a></code></td>
-<td class="colLast"><span class="strong">DriverSelectorQueryContext.</span><code><strong><a href="../../../../../../../org/apache/lens/server/api/query/DriverSelectorQueryContext.html#getDriverQueryPlan(org.apache.lens.server.api.driver.LensDriver)">getDriverQueryPlan</a></strong>(<a href="../../../../../../../org/apache/lens/server/api/driver/LensDriver.html" title="interface in org.apache.lens.server.api.driver">LensDriver</a>&nbsp;driver)</code>&nbsp;</td>
+<td class="colLast"><span class="strong">DriverSelectorQueryContext.DriverQueryContext.</span><code><strong><a href="../../../../../../../org/apache/lens/server/api/query/DriverSelectorQueryContext.DriverQueryContext.html#getDriverQueryPlan()">getDriverQueryPlan</a></strong>()</code>
+<div class="block">Driver's query plan</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html" title="class in org.apache.lens.server.api.driver">DriverQueryPlan</a></code></td>
-<td class="colLast"><span class="strong">DriverSelectorQueryContext.</span><code><strong><a href="../../../../../../../org/apache/lens/server/api/query/DriverSelectorQueryContext.html#getDriverRewriterPlan(org.apache.lens.server.api.driver.LensDriver)">getDriverRewriterPlan</a></strong>(<a href="../../../../../../../org/apache/lens/server/api/driver/LensDriver.html" title="interface in org.apache.lens.server.api.driver">LensDriver</a>&nbsp;driver)</code>&nbsp;</td>
+<td class="colLast"><span class="strong">DriverSelectorQueryContext.</span><code><strong><a href="../../../../../../../org/apache/lens/server/api/query/DriverSelectorQueryContext.html#getDriverQueryPlan(org.apache.lens.server.api.driver.LensDriver)">getDriverQueryPlan</a></strong>(<a href="../../../../../../../org/apache/lens/server/api/driver/LensDriver.html" title="interface in org.apache.lens.server.api.driver">LensDriver</a>&nbsp;driver)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html" title="class in org.apache.lens.server.api.driver">DriverQueryPlan</a></code></td>
+<td class="colLast"><span class="strong">DriverSelectorQueryContext.</span><code><strong><a href="../../../../../../../org/apache/lens/server/api/query/DriverSelectorQueryContext.html#getDriverRewriterPlan(org.apache.lens.server.api.driver.LensDriver)">getDriverRewriterPlan</a></strong>(<a href="../../../../../../../org/apache/lens/server/api/driver/LensDriver.html" title="interface in org.apache.lens.server.api.driver">LensDriver</a>&nbsp;driver)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html" title="class in org.apache.lens.server.api.driver">DriverQueryPlan</a></code></td>
 <td class="colLast"><span class="strong">AbstractQueryContext.</span><code><strong><a href="../../../../../../../org/apache/lens/server/api/query/AbstractQueryContext.html#getDriverRewriterPlan(org.apache.lens.server.api.driver.LensDriver)">getDriverRewriterPlan</a></strong>(<a href="../../../../../../../org/apache/lens/server/api/driver/LensDriver.html" title="interface in org.apache.lens.server.api.driver">LensDriver</a>&nbsp;driver)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html" title="class in org.apache.lens.server.api.driver">DriverQueryPlan</a></code></td>
+<td class="colLast"><span class="strong">DriverSelectorQueryContext.DriverQueryContext.</span><code><strong><a href="../../../../../../../org/apache/lens/server/api/query/DriverSelectorQueryContext.DriverQueryContext.html#getRewriterPlan()">getRewriterPlan</a></strong>()</code>
+<div class="block">Plan generated from rewriter.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html" title="class in org.apache.lens.server.api.driver">DriverQueryPlan</a></code></td>
@@ -256,13 +268,25 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="strong">DriverSelectorQueryContext.</span><code><strong><a href="../../../../../../../org/apache/lens/server/api/query/DriverSelectorQueryContext.html#setDriverQueryPlan(org.apache.lens.server.api.driver.LensDriver,%20org.apache.lens.server.api.driver.DriverQueryPlan)">setDriverQueryPlan</a></strong>(<a href="../../../../../../../org/apache/lens/server/api/driver/LensDriver.html" title="interface in org.apache.lens.server.api.driver">LensDriver</a>&nbsp;driver,
-                  <a href="../../../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html" title="class in org.apache.lens.server.api.driver">DriverQueryPlan</a>&nbsp;qp)</code>&nbsp;</td>
+<td class="colLast"><span class="strong">DriverSelectorQueryContext.DriverQueryContext.</span><code><strong><a href="../../../../../../../org/apache/lens/server/api/query/DriverSelectorQueryContext.DriverQueryContext.html#setDriverQueryPlan(org.apache.lens.server.api.driver.DriverQueryPlan)">setDriverQueryPlan</a></strong>(<a href="../../../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html" title="class in org.apache.lens.server.api.driver">DriverQueryPlan</a>&nbsp;driverQueryPlan)</code>
+<div class="block">Driver's query plan</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">DriverSelectorQueryContext.</span><code><strong><a href="../../../../../../../org/apache/lens/server/api/query/DriverSelectorQueryContext.html#setDriverQueryPlan(org.apache.lens.server.api.driver.LensDriver,%20org.apache.lens.server.api.driver.DriverQueryPlan)">setDriverQueryPlan</a></strong>(<a href="../../../../../../../org/apache/lens/server/api/driver/LensDriver.html" title="interface in org.apache.lens.server.api.driver">LensDriver</a>&nbsp;driver,
+                  <a href="../../../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html" title="class in org.apache.lens.server.api.driver">DriverQueryPlan</a>&nbsp;qp)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="strong">DriverSelectorQueryContext.</span><code><strong><a href="../../../../../../../org/apache/lens/server/api/query/DriverSelectorQueryContext.html#setDriverRewriterPlan(org.apache.lens.server.api.driver.LensDriver,%20org.apache.lens.server.api.driver.DriverQueryPlan)">setDriverRewriterPlan</a></strong>(<a href="../../../../../../../org/apache/lens/server/api/driver/LensDriver.html" title="interface in org.apache.lens.server.api.driver">LensDriver</a>&nbsp;driver,
                      <a href="../../../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html" title="class in org.apache.lens.server.api.driver">DriverQueryPlan</a>&nbsp;rewriterPlan)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">DriverSelectorQueryContext.DriverQueryContext.</span><code><strong><a href="../../../../../../../org/apache/lens/server/api/query/DriverSelectorQueryContext.DriverQueryContext.html#setRewriterPlan(org.apache.lens.server.api.driver.DriverQueryPlan)">setRewriterPlan</a></strong>(<a href="../../../../../../../org/apache/lens/server/api/driver/DriverQueryPlan.html" title="class in org.apache.lens.server.api.driver">DriverQueryPlan</a>&nbsp;rewriterPlan)</code>
+<div class="block">Plan generated from rewriter.</div>
+</td>
 </tr>
 </tbody>
 </table>

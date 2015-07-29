@@ -251,16 +251,24 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
               <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;spacedAlias)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getAlias(java.lang.String)">getAlias</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;expr)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getAggregateExprs()">getAggregateExprs</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getAliasForTableName(org.apache.lens.cube.metadata.Named)">getAliasForTableName</a></strong>(<a href="../../../../../org/apache/lens/cube/metadata/Named.html" title="interface in org.apache.lens.cube.metadata">Named</a>&nbsp;named)</code>&nbsp;</td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getAlias(java.lang.String)">getAlias</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;expr)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getAliasForTableName(org.apache.lens.cube.metadata.Named)">getAliasForTableName</a></strong>(<a href="../../../../../org/apache/lens/cube/metadata/Named.html" title="interface in org.apache.lens.cube.metadata">Named</a>&nbsp;named)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getAliasForTableName(java.lang.String)">getAliasForTableName</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tableName)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/lens/cube/parse/JoinResolver.AutoJoinContext.html" title="class in org.apache.lens.cube.parse">JoinResolver.AutoJoinContext</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getAutoJoinCtx()">getAutoJoinCtx</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../org/apache/lens/cube/metadata/Cube.html" title="class in org.apache.lens.cube.metadata">Cube</a></code></td>
@@ -268,23 +276,87 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../org/apache/lens/cube/parse/CandidateDim.html" title="class in org.apache.lens.cube.parse">CandidateDim</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getCandidateDims()">getCandidateDims</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../org/apache/lens/cube/parse/CandidateDim.html" title="class in org.apache.lens.cube.parse">CandidateDim</a>&gt;&gt;</code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getCandidateDimTables()">getCandidateDimTables</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../org/apache/lens/cube/parse/CandidateFact.html" title="class in org.apache.lens.cube.parse">CandidateFact</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getCandidateFacts()">getCandidateFacts</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../org/apache/lens/cube/parse/CandidateFact.html" title="class in org.apache.lens.cube.parse">CandidateFact</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getCandidateFactSets()">getCandidateFactSets</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getColToTableAlias()">getColToTableAlias</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getColumnsQueried(java.lang.String)">getColumnsQueried</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tblName)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>org.apache.hadoop.conf.Configuration</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getConf()">getConf</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/lens/cube/metadata/CubeInterface.html" title="interface in org.apache.lens.cube.metadata">CubeInterface</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getCube()">getCube</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../org/apache/lens/cube/metadata/AbstractCubeTable.html" title="class in org.apache.lens.cube.metadata">AbstractCubeTable</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getCubeTableForAlias(java.lang.String)">getCubeTableForAlias</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;alias)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/apache/lens/cube/metadata/AbstractCubeTable.html" title="class in org.apache.lens.cube.metadata">AbstractCubeTable</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getCubeTbls()">getCubeTbls</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/lens/cube/parse/DenormalizationResolver.DenormalizationContext.html" title="class in org.apache.lens.cube.parse">DenormalizationResolver.DenormalizationContext</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getDeNormCtx()">getDeNormCtx</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getDimensions()">getDimensions</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>,<a href="../../../../../org/apache/lens/cube/parse/PruneCauses.html" title="class in org.apache.lens.cube.parse">PruneCauses</a>&lt;<a href="../../../../../org/apache/lens/cube/metadata/CubeDimensionTable.html" title="class in org.apache.lens.cube.metadata">CubeDimensionTable</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getDimPruningMsgs()">getDimPruningMsgs</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;org.apache.lens.cube.parse.CubeQueryContext.QueriedExprColumn,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getExprColToDim()">getExprColToDim</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>org.apache.lens.cube.parse.ExpressionResolver.ExpressionResolverContext</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getExprCtx()">getExprCtx</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getExprToAlias()">getExprToAlias</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getExprToAliasMap()">getExprToAliasMap</a></strong>()</code>&nbsp;</td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/lens/cube/parse/PruneCauses.html" title="class in org.apache.lens.cube.parse">PruneCauses</a>&lt;<a href="../../../../../org/apache/lens/cube/metadata/CubeFactTable.html" title="class in org.apache.lens.cube.metadata">CubeFactTable</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getFactPruningMsgs()">getFactPruningMsgs</a></strong>()</code>&nbsp;</td>
+</tr>
 <tr class="rowColor">
+<td class="colFirst"><code>org.apache.hadoop.hive.ql.parse.ASTNode</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getGroupByAST()">getGroupByAST</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getGroupByTree()">getGroupByTree</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>org.apache.hadoop.hive.ql.parse.ASTNode</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getHavingAST()">getHavingAST</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
@@ -299,12 +371,28 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getInsertClause()">getInsertClause</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/apache/lens/cube/metadata/JoinChain.html" title="class in org.apache.lens.cube.metadata">JoinChain</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getJoinchains()">getJoinchains</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;org.apache.hadoop.hive.ql.parse.QBJoinTree,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getJoinConds()">getJoinConds</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>org.apache.hadoop.hive.ql.parse.ASTNode</code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getJoinTree()">getJoinTree</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getLimitValue()">getLimitValue</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/lens/cube/metadata/CubeMetastoreClient.html" title="class in org.apache.lens.cube.metadata">CubeMetastoreClient</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getMetastoreClient()">getMetastoreClient</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getNonChainedDimensions()">getNonChainedDimensions</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
@@ -319,21 +407,37 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getOptionalDimensions()">getOptionalDimensions</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>org.apache.hadoop.hive.ql.parse.ASTNode</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getOrderByAST()">getOrderByAST</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getOrderByTree()">getOrderByTree</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getPartitionColumnOfTimeDim(org.apache.lens.cube.metadata.CubeInterface,%20java.lang.String)">getPartitionColumnOfTimeDim</a></strong>(<a href="../../../../../org/apache/lens/cube/metadata/CubeInterface.html" title="interface in org.apache.lens.cube.metadata">CubeInterface</a>&nbsp;cube,
                            <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;timeDimName)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getPartitionColumnOfTimeDim(java.lang.String)">getPartitionColumnOfTimeDim</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;timeDimName)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getPartitionColumnsQueried()">getPartitionColumnsQueried</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../org/apache/lens/cube/parse/CandidateDim.html" title="class in org.apache.lens.cube.parse">CandidateDim</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getPickedDimTables()">getPickedDimTables</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../org/apache/lens/cube/parse/CandidateFact.html" title="class in org.apache.lens.cube.parse">CandidateFact</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getPickedFacts()">getPickedFacts</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>org.apache.hadoop.hive.ql.parse.QB</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getQb()">getQb</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>org.apache.hadoop.hive.ql.parse.QBJoinTree</code></td>
@@ -344,90 +448,146 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getQueriedDimAttrs()">getQueriedDimAttrs</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getQueriedExprs()">getQueriedExprs</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getQueriedExprsWithMeasures()">getQueriedExprsWithMeasures</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getQueriedMsrs()">getQueriedMsrs</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../org/apache/lens/cube/metadata/AbstractCubeTable.html" title="class in org.apache.lens.cube.metadata">AbstractCubeTable</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getQueriedTable(java.lang.String)">getQueriedTable</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;alias)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>com.google.common.collect.ImmutableSet&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getQueriedTimeDimCols()">getQueriedTimeDimCols</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getRefColToDim()">getRefColToDim</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getSelectAlias(int)">getSelectAlias</a></strong>(int&nbsp;index)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getSelectAliases()">getSelectAliases</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>org.apache.hadoop.hive.ql.parse.ASTNode</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getSelectAST()">getSelectAST</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getSelectFinalAlias(int)">getSelectFinalAlias</a></strong>(int&nbsp;index)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getSelectFinalAliases()">getSelectFinalAliases</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getSelectTree()">getSelectTree</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;</code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getTblAliasToColumns()">getTblAliasToColumns</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getTimeDimOfPartitionColumn(org.apache.lens.cube.metadata.CubeInterface,%20java.lang.String)">getTimeDimOfPartitionColumn</a></strong>(<a href="../../../../../org/apache/lens/cube/metadata/CubeInterface.html" title="interface in org.apache.lens.cube.metadata">CubeInterface</a>&nbsp;cube,
                            <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;partCol)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getTimeDimOfPartitionColumn(java.lang.String)">getTimeDimOfPartitionColumn</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;partCol)</code>&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../org/apache/lens/cube/parse/TimeRange.html" title="class in org.apache.lens.cube.parse">TimeRange</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getTimeRanges()">getTimeRanges</a></strong>()</code>&nbsp;</td>
+</tr>
 <tr class="altColor">
+<td class="colFirst"><code>org.apache.hadoop.hive.ql.parse.ASTNode</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getWhereAST()">getWhereAST</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getWhereTree()">getWhereTree</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#hasAggregates()">hasAggregates</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#hasCubeInQuery()">hasCubeInQuery</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#hasDimensionInQuery()">hasDimensionInQuery</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#isAggregateExpr(java.lang.String)">isAggregateExpr</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;expr)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#isAutoJoinResolved()">isAutoJoinResolved</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#isCubeMeasure(java.lang.String)">isCubeMeasure</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;col)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#print()">print</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#pruneCandidateFactSet(org.apache.lens.cube.parse.CandidateTablePruneCause.CandidateTablePruneCode)">pruneCandidateFactSet</a></strong>(<a href="../../../../../org/apache/lens/cube/parse/CandidateTablePruneCause.CandidateTablePruneCode.html" title="enum in org.apache.lens.cube.parse">CandidateTablePruneCause.CandidateTablePruneCode</a>&nbsp;pruneCause)</code>
 <div class="block">Prune candidate fact sets with respect to available candidate facts.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#pruneCandidateFactWithCandidateSet(org.apache.lens.cube.parse.CandidateTablePruneCause.CandidateTablePruneCode)">pruneCandidateFactWithCandidateSet</a></strong>(<a href="../../../../../org/apache/lens/cube/parse/CandidateTablePruneCause.CandidateTablePruneCode.html" title="enum in org.apache.lens.cube.parse">CandidateTablePruneCause.CandidateTablePruneCode</a>&nbsp;pruneCause)</code>
 <div class="block">Prune candidate fact with respect to available candidate fact sets.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#pruneCandidateFactWithCandidateSet(org.apache.lens.cube.parse.CandidateTablePruneCause)">pruneCandidateFactWithCandidateSet</a></strong>(<a href="../../../../../org/apache/lens/cube/parse/CandidateTablePruneCause.html" title="class in org.apache.lens.cube.parse">CandidateTablePruneCause</a>&nbsp;pruneCause)</code>&nbsp;</td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#setAutoJoinCtx(org.apache.lens.cube.parse.JoinResolver.AutoJoinContext)">setAutoJoinCtx</a></strong>(<a href="../../../../../org/apache/lens/cube/parse/JoinResolver.AutoJoinContext.html" title="class in org.apache.lens.cube.parse">JoinResolver.AutoJoinContext</a>&nbsp;autoJoinCtx)</code>&nbsp;</td>
+</tr>
 <tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#setDeNormCtx(org.apache.lens.cube.parse.DenormalizationResolver.DenormalizationContext)">setDeNormCtx</a></strong>(<a href="../../../../../org/apache/lens/cube/parse/DenormalizationResolver.DenormalizationContext.html" title="class in org.apache.lens.cube.parse">DenormalizationResolver.DenormalizationContext</a>&nbsp;deNormCtx)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#setExprCtx(org.apache.lens.cube.parse.ExpressionResolver.ExpressionResolverContext)">setExprCtx</a></strong>(org.apache.lens.cube.parse.ExpressionResolver.ExpressionResolverContext&nbsp;exprCtx)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#setGroupByAST(org.apache.hadoop.hive.ql.parse.ASTNode)">setGroupByAST</a></strong>(org.apache.hadoop.hive.ql.parse.ASTNode&nbsp;groupByAST)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#setJoinCond(org.apache.hadoop.hive.ql.parse.QBJoinTree,%20java.lang.String)">setJoinCond</a></strong>(org.apache.hadoop.hive.ql.parse.QBJoinTree&nbsp;qb,
            <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cond)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#setWhereAST(org.apache.hadoop.hive.ql.parse.ASTNode)">setWhereAST</a></strong>(org.apache.hadoop.hive.ql.parse.ASTNode&nbsp;whereAST)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -1163,13 +1323,414 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <pre>public&nbsp;com.google.common.collect.ImmutableSet&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getQueriedTimeDimCols()</pre>
 </li>
 </ul>
+<a name="getQb()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getQb</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;org.apache.hadoop.hive.ql.parse.QB&nbsp;getQb()</pre>
+</li>
+</ul>
+<a name="getConf()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConf</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;org.apache.hadoop.conf.Configuration&nbsp;getConf()</pre>
+</li>
+</ul>
+<a name="getTimeRanges()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTimeRanges</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../org/apache/lens/cube/parse/TimeRange.html" title="class in org.apache.lens.cube.parse">TimeRange</a>&gt;&nbsp;getTimeRanges()</pre>
+</li>
+</ul>
+<a name="getCube()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCube</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../../org/apache/lens/cube/metadata/CubeInterface.html" title="interface in org.apache.lens.cube.metadata">CubeInterface</a>&nbsp;getCube()</pre>
+</li>
+</ul>
+<a name="getDimensions()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDimensions</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>&gt;&nbsp;getDimensions()</pre>
+</li>
+</ul>
+<a name="getNonChainedDimensions()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNonChainedDimensions</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>&gt;&nbsp;getNonChainedDimensions()</pre>
+</li>
+</ul>
+<a name="getJoinchains()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getJoinchains</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/apache/lens/cube/metadata/JoinChain.html" title="class in org.apache.lens.cube.metadata">JoinChain</a>&gt;&nbsp;getJoinchains()</pre>
+</li>
+</ul>
+<a name="getQueriedMsrs()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getQueriedMsrs</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getQueriedMsrs()</pre>
+</li>
+</ul>
+<a name="getQueriedExprs()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getQueriedExprs</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getQueriedExprs()</pre>
+</li>
+</ul>
+<a name="getQueriedExprsWithMeasures()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getQueriedExprsWithMeasures</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getQueriedExprsWithMeasures()</pre>
+</li>
+</ul>
+<a name="getColToTableAlias()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getColToTableAlias</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getColToTableAlias()</pre>
+</li>
+</ul>
+<a name="getCandidateFactSets()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCandidateFactSets</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../org/apache/lens/cube/parse/CandidateFact.html" title="class in org.apache.lens.cube.parse">CandidateFact</a>&gt;&gt;&nbsp;getCandidateFactSets()</pre>
+</li>
+</ul>
+<a name="getCubeTbls()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCubeTbls</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../org/apache/lens/cube/metadata/AbstractCubeTable.html" title="class in org.apache.lens.cube.metadata">AbstractCubeTable</a>&gt;&nbsp;getCubeTbls()</pre>
+</li>
+</ul>
 <a name="getTblAliasToColumns()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTblAliasToColumns</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&nbsp;getTblAliasToColumns()</pre>
+</li>
+</ul>
+<a name="getExprToAlias()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExprToAlias</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getExprToAlias()</pre>
+</li>
+</ul>
+<a name="getSelectAliases()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSelectAliases</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getSelectAliases()</pre>
+</li>
+</ul>
+<a name="getSelectFinalAliases()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSelectFinalAliases</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getSelectFinalAliases()</pre>
+</li>
+</ul>
+<a name="getAggregateExprs()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAggregateExprs</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getAggregateExprs()</pre>
+</li>
+</ul>
+<a name="getJoinConds()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getJoinConds</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;org.apache.hadoop.hive.ql.parse.QBJoinTree,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getJoinConds()</pre>
+</li>
+</ul>
+<a name="getCandidateFacts()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCandidateFacts</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../org/apache/lens/cube/parse/CandidateFact.html" title="class in org.apache.lens.cube.parse">CandidateFact</a>&gt;&nbsp;getCandidateFacts()</pre>
+</li>
+</ul>
+<a name="getCandidateDims()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCandidateDims</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../org/apache/lens/cube/parse/CandidateDim.html" title="class in org.apache.lens.cube.parse">CandidateDim</a>&gt;&gt;&nbsp;getCandidateDims()</pre>
+</li>
+</ul>
+<a name="getHavingAST()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHavingAST</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;org.apache.hadoop.hive.ql.parse.ASTNode&nbsp;getHavingAST()</pre>
+</li>
+</ul>
+<a name="getSelectAST()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSelectAST</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;org.apache.hadoop.hive.ql.parse.ASTNode&nbsp;getSelectAST()</pre>
+</li>
+</ul>
+<a name="getWhereAST()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getWhereAST</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;org.apache.hadoop.hive.ql.parse.ASTNode&nbsp;getWhereAST()</pre>
+</li>
+</ul>
+<a name="setWhereAST(org.apache.hadoop.hive.ql.parse.ASTNode)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setWhereAST</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setWhereAST(org.apache.hadoop.hive.ql.parse.ASTNode&nbsp;whereAST)</pre>
+</li>
+</ul>
+<a name="getOrderByAST()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOrderByAST</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;org.apache.hadoop.hive.ql.parse.ASTNode&nbsp;getOrderByAST()</pre>
+</li>
+</ul>
+<a name="getGroupByAST()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getGroupByAST</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;org.apache.hadoop.hive.ql.parse.ASTNode&nbsp;getGroupByAST()</pre>
+</li>
+</ul>
+<a name="setGroupByAST(org.apache.hadoop.hive.ql.parse.ASTNode)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setGroupByAST</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setGroupByAST(org.apache.hadoop.hive.ql.parse.ASTNode&nbsp;groupByAST)</pre>
+</li>
+</ul>
+<a name="getMetastoreClient()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMetastoreClient</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../../org/apache/lens/cube/metadata/CubeMetastoreClient.html" title="class in org.apache.lens.cube.metadata">CubeMetastoreClient</a>&nbsp;getMetastoreClient()</pre>
+</li>
+</ul>
+<a name="getAutoJoinCtx()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAutoJoinCtx</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../../org/apache/lens/cube/parse/JoinResolver.AutoJoinContext.html" title="class in org.apache.lens.cube.parse">JoinResolver.AutoJoinContext</a>&nbsp;getAutoJoinCtx()</pre>
+</li>
+</ul>
+<a name="setAutoJoinCtx(org.apache.lens.cube.parse.JoinResolver.AutoJoinContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAutoJoinCtx</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setAutoJoinCtx(<a href="../../../../../org/apache/lens/cube/parse/JoinResolver.AutoJoinContext.html" title="class in org.apache.lens.cube.parse">JoinResolver.AutoJoinContext</a>&nbsp;autoJoinCtx)</pre>
+</li>
+</ul>
+<a name="getExprCtx()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExprCtx</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;org.apache.lens.cube.parse.ExpressionResolver.ExpressionResolverContext&nbsp;getExprCtx()</pre>
+</li>
+</ul>
+<a name="setExprCtx(org.apache.lens.cube.parse.ExpressionResolver.ExpressionResolverContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setExprCtx</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setExprCtx(org.apache.lens.cube.parse.ExpressionResolver.ExpressionResolverContext&nbsp;exprCtx)</pre>
+</li>
+</ul>
+<a name="getDeNormCtx()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDeNormCtx</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../../org/apache/lens/cube/parse/DenormalizationResolver.DenormalizationContext.html" title="class in org.apache.lens.cube.parse">DenormalizationResolver.DenormalizationContext</a>&nbsp;getDeNormCtx()</pre>
+</li>
+</ul>
+<a name="setDeNormCtx(org.apache.lens.cube.parse.DenormalizationResolver.DenormalizationContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setDeNormCtx</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setDeNormCtx(<a href="../../../../../org/apache/lens/cube/parse/DenormalizationResolver.DenormalizationContext.html" title="class in org.apache.lens.cube.parse">DenormalizationResolver.DenormalizationContext</a>&nbsp;deNormCtx)</pre>
+</li>
+</ul>
+<a name="getFactPruningMsgs()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFactPruningMsgs</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../../org/apache/lens/cube/parse/PruneCauses.html" title="class in org.apache.lens.cube.parse">PruneCauses</a>&lt;<a href="../../../../../org/apache/lens/cube/metadata/CubeFactTable.html" title="class in org.apache.lens.cube.metadata">CubeFactTable</a>&gt;&nbsp;getFactPruningMsgs()</pre>
+</li>
+</ul>
+<a name="getDimPruningMsgs()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDimPruningMsgs</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>,<a href="../../../../../org/apache/lens/cube/parse/PruneCauses.html" title="class in org.apache.lens.cube.parse">PruneCauses</a>&lt;<a href="../../../../../org/apache/lens/cube/metadata/CubeDimensionTable.html" title="class in org.apache.lens.cube.metadata">CubeDimensionTable</a>&gt;&gt;&nbsp;getDimPruningMsgs()</pre>
+</li>
+</ul>
+<a name="getRefColToDim()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRefColToDim</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>&gt;&gt;&nbsp;getRefColToDim()</pre>
+</li>
+</ul>
+<a name="getExprColToDim()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExprColToDim</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;org.apache.lens.cube.parse.CubeQueryContext.QueriedExprColumn,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>&gt;&gt;&nbsp;getExprColToDim()</pre>
+</li>
+</ul>
+<a name="getPickedFacts()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPickedFacts</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../org/apache/lens/cube/parse/CandidateFact.html" title="class in org.apache.lens.cube.parse">CandidateFact</a>&gt;&nbsp;getPickedFacts()</pre>
+</li>
+</ul>
+<a name="getPickedDimTables()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getTblAliasToColumns</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&gt;&nbsp;getTblAliasToColumns()</pre>
+<h4>getPickedDimTables</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../org/apache/lens/cube/parse/CandidateDim.html" title="class in org.apache.lens.cube.parse">CandidateDim</a>&gt;&nbsp;getPickedDimTables()</pre>
 </li>
 </ul>
 </li>

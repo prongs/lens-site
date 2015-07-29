@@ -158,16 +158,24 @@ implements <a href="../../../../../org/apache/lens/cube/parse/CandidateTable.htm
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CandidateDim.html#getStorageTable()">getStorageTable</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CandidateDim.html#getStorageTables()">getStorageTables</a></strong>()</code>
 <div class="block">Get storage tables corresponding to this candidate</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../org/apache/lens/cube/metadata/CubeDimensionTable.html" title="class in org.apache.lens.cube.metadata">CubeDimensionTable</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CandidateDim.html#getTable()">getTable</a></strong>()</code>
 <div class="block">Get candidate table</div>
 </td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CandidateDim.html#getWhereClause()">getWhereClause</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>int</code></td>
@@ -176,6 +184,14 @@ implements <a href="../../../../../org/apache/lens/cube/parse/CandidateTable.htm
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CandidateDim.html#isWhereClauseAdded()">isWhereClauseAdded</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CandidateDim.html#setStorageTable(java.lang.String)">setStorageTable</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;storageTable)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/lens/cube/parse/CandidateDim.html#setWhereClause(java.lang.String)">setWhereClause</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;whereClause)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -357,7 +373,7 @@ implements <a href="../../../../../org/apache/lens/cube/parse/CandidateTable.htm
 <a name="getPartsQueried()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getPartsQueried</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getPartsQueried()</pre>
@@ -367,6 +383,46 @@ implements <a href="../../../../../org/apache/lens/cube/parse/CandidateTable.htm
 <dt><strong>Specified by:</strong></dt>
 <dd><code><a href="../../../../../org/apache/lens/cube/parse/CandidateTable.html#getPartsQueried()">getPartsQueried</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/apache/lens/cube/parse/CandidateTable.html" title="interface in org.apache.lens.cube.parse">CandidateTable</a></code></dd>
 </dl>
+</li>
+</ul>
+<a name="getStorageTable()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStorageTable</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getStorageTable()</pre>
+</li>
+</ul>
+<a name="setStorageTable(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setStorageTable</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setStorageTable(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;storageTable)</pre>
+</li>
+</ul>
+<a name="getWhereClause()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getWhereClause</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getWhereClause()</pre>
+</li>
+</ul>
+<a name="setWhereClause(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setWhereClause</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setWhereClause(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;whereClause)</pre>
 </li>
 </ul>
 </li>

@@ -178,6 +178,12 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../org/apache/lens/api/LensSessionHandle.html" title="class in org.apache.lens.api">LensSessionHandle</a></code></td>
+<td class="colLast"><span class="strong">LensConnection.</span><code><strong><a href="../../../../../org/apache/lens/client/LensConnection.html#getSessionHandle()">getSessionHandle</a></strong>()</code>
+<div class="block">The session handle.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/lens/api/LensSessionHandle.html" title="class in org.apache.lens.api">LensSessionHandle</a></code></td>
 <td class="colLast"><span class="strong">LensConnection.</span><code><strong><a href="../../../../../org/apache/lens/client/LensConnection.html#open(java.lang.String)">open</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;password)</code>
 <div class="block">Open.</div>
 </td>
@@ -1099,6 +1105,12 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/lens/api/LensSessionHandle.html" title="class in org.apache.lens.api">LensSessionHandle</a></code></td>
+<td class="colLast"><span class="strong">SessionEvent.</span><code><strong><a href="../../../../../org/apache/lens/server/api/session/SessionEvent.html#getSessionHandle()">getSessionHandle</a></strong>()</code>
+<div class="block">The lens session handle.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../org/apache/lens/api/LensSessionHandle.html" title="class in org.apache.lens.api">LensSessionHandle</a></code></td>
 <td class="colLast"><span class="strong">SessionService.</span><code><strong><a href="../../../../../org/apache/lens/server/api/session/SessionService.html#openSession(java.lang.String,%20java.lang.String,%20java.lang.String,%20java.util.Map)">openSession</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;username,
            <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;password,
@@ -2406,6 +2418,10 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../org/apache/lens/api/LensSessionHandle.html" title="class in org.apache.lens.api">LensSessionHandle</a></code></td>
+<td class="colLast"><span class="strong">LensSessionImpl.LensSessionPersistInfo.</span><code><strong><a href="../../../../../org/apache/lens/server/session/LensSessionImpl.LensSessionPersistInfo.html#getSessionHandle()">getSessionHandle</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/lens/api/LensSessionHandle.html" title="class in org.apache.lens.api">LensSessionHandle</a></code></td>
 <td class="colLast"><span class="strong">SessionResource.</span><code><strong><a href="../../../../../org/apache/lens/server/session/SessionResource.html#openSession(java.lang.String,%20java.lang.String,%20java.lang.String,%20org.apache.lens.api.LensConf)">openSession</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;username,
            <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;password,
            <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;database,
@@ -2413,7 +2429,7 @@
 <div class="block">Create a new session with Lens server.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../org/apache/lens/api/LensSessionHandle.html" title="class in org.apache.lens.api">LensSessionHandle</a></code></td>
 <td class="colLast"><span class="strong">HiveSessionService.</span><code><strong><a href="../../../../../org/apache/lens/server/session/HiveSessionService.html#openSession(java.lang.String,%20java.lang.String,%20java.lang.String,%20java.util.Map)">openSession</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;username,
            <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;password,
@@ -2524,6 +2540,10 @@
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">LensSessionImpl.LensSessionPersistInfo.</span><code><strong><a href="../../../../../org/apache/lens/server/session/LensSessionImpl.LensSessionPersistInfo.html#setSessionHandle(org.apache.lens.api.LensSessionHandle)">setSessionHandle</a></strong>(<a href="../../../../../org/apache/lens/api/LensSessionHandle.html" title="class in org.apache.lens.api">LensSessionHandle</a>&nbsp;sessionHandle)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="strong">HiveSessionService.</span><code><strong><a href="../../../../../org/apache/lens/server/session/HiveSessionService.html#setSessionParameter(org.apache.lens.api.LensSessionHandle,%20java.lang.String,%20java.lang.String)">setSessionParameter</a></strong>(<a href="../../../../../org/apache/lens/api/LensSessionHandle.html" title="class in org.apache.lens.api">LensSessionHandle</a>&nbsp;sessionid,
                    <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,

@@ -65,13 +65,13 @@
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods_inherited_from_class_org.apache.lens.server.api.driver.DriverEvent">Method</a></li>
+<li><a href="#method_summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method_detail">Method</a></li>
 </ul>
 </div>
 <a name="skip-navbar_top">
@@ -144,6 +144,31 @@ extends <a href="../../../../../../org/apache/lens/server/api/driver/DriverEvent
 <!--   -->
 </a>
 <h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/driver/DriverSessionStarted.html#getDriverSessionID()">getDriverSessionID</a></strong>()</code>
+<div class="block">The driver session id.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/driver/DriverSessionStarted.html#getEventId()">getEventId</a></strong>()</code>
+<div class="block">The event id.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/driver/DriverSessionStarted.html#getLensSessionID()">getLensSessionID</a></strong>()</code>
+<div class="block">The lens session id.</div>
+</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a name="methods_inherited_from_class_org.apache.lens.server.api.driver.DriverEvent">
 <!--   -->
@@ -156,7 +181,7 @@ extends <a href="../../../../../../org/apache/lens/server/api/driver/DriverEvent
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;org.apache.lens.server.api.events.<a href="../../../../../../org/apache/lens/server/api/events/LensEvent.html" title="class in org.apache.lens.server.api.events">LensEvent</a></h3>
-<code><a href="../../../../../../org/apache/lens/server/api/events/LensEvent.html#getEventId()">getEventId</a></code></li>
+<code><a href="../../../../../../org/apache/lens/server/api/events/LensEvent.html#getEventTime()">getEventTime</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
@@ -191,6 +216,51 @@ extends <a href="../../../../../../org/apache/lens/server/api/driver/DriverEvent
                     <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;driverSessionID)</pre>
 <div class="block">Instantiates a new driver session started.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>eventTime</code> - the event time</dd><dd><code>driver</code> - the driver</dd><dd><code>lensSessionID</code> - the lens session id</dd><dd><code>driverSessionID</code> - the driver session id</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getEventId()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEventId</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getEventId()</pre>
+<div class="block">The event id.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/lens/server/api/events/LensEvent.html#getEventId()">getEventId</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../org/apache/lens/server/api/events/LensEvent.html" title="class in org.apache.lens.server.api.events">LensEvent</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getLensSessionID()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLensSessionID</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getLensSessionID()</pre>
+<div class="block">The lens session id.</div>
+</li>
+</ul>
+<a name="getDriverSessionID()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getDriverSessionID</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getDriverSessionID()</pre>
+<div class="block">The driver session id.</div>
 </li>
 </ul>
 </li>
@@ -247,13 +317,13 @@ extends <a href="../../../../../../org/apache/lens/server/api/driver/DriverEvent
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods_inherited_from_class_org.apache.lens.server.api.driver.DriverEvent">Method</a></li>
+<li><a href="#method_summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method_detail">Method</a></li>
 </ul>
 </div>
 <a name="skip-navbar_bottom">

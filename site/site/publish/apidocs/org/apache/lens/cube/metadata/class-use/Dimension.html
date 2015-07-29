@@ -186,15 +186,39 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../org/apache/lens/cube/parse/CandidateDim.html" title="class in org.apache.lens.cube.parse">CandidateDim</a>&gt;&gt;</code></td>
-<td class="colLast"><span class="strong">CubeQueryContext.</span><code><strong><a href="../../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getCandidateDimTables()">getCandidateDimTables</a></strong>()</code>&nbsp;</td>
+<td class="colLast"><span class="strong">CubeQueryContext.</span><code><strong><a href="../../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getCandidateDims()">getCandidateDims</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>,org.apache.lens.cube.parse.CubeQueryContext.OptionalDimCtx&gt;</code></td>
-<td class="colLast"><span class="strong">CubeQueryContext.</span><code><strong><a href="../../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getOptionalDimensionMap()">getOptionalDimensionMap</a></strong>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../org/apache/lens/cube/parse/CandidateDim.html" title="class in org.apache.lens.cube.parse">CandidateDim</a>&gt;&gt;</code></td>
+<td class="colLast"><span class="strong">CubeQueryContext.</span><code><strong><a href="../../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getCandidateDimTables()">getCandidateDimTables</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>&gt;</code></td>
+<td class="colLast"><span class="strong">CubeQueryContext.</span><code><strong><a href="../../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getDimensions()">getDimensions</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>,<a href="../../../../../../org/apache/lens/cube/parse/PruneCauses.html" title="class in org.apache.lens.cube.parse">PruneCauses</a>&lt;<a href="../../../../../../org/apache/lens/cube/metadata/CubeDimensionTable.html" title="class in org.apache.lens.cube.metadata">CubeDimensionTable</a>&gt;&gt;</code></td>
+<td class="colLast"><span class="strong">CubeQueryContext.</span><code><strong><a href="../../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getDimPruningMsgs()">getDimPruningMsgs</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;org.apache.lens.cube.parse.CubeQueryContext.QueriedExprColumn,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>&gt;&gt;</code></td>
+<td class="colLast"><span class="strong">CubeQueryContext.</span><code><strong><a href="../../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getExprColToDim()">getExprColToDim</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>&gt;</code></td>
+<td class="colLast"><span class="strong">CubeQueryContext.</span><code><strong><a href="../../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getNonChainedDimensions()">getNonChainedDimensions</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>,org.apache.lens.cube.parse.CubeQueryContext.OptionalDimCtx&gt;</code></td>
+<td class="colLast"><span class="strong">CubeQueryContext.</span><code><strong><a href="../../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getOptionalDimensionMap()">getOptionalDimensionMap</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>&gt;</code></td>
 <td class="colLast"><span class="strong">CubeQueryContext.</span><code><strong><a href="../../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getOptionalDimensions()">getOptionalDimensions</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>&gt;&gt;</code></td>
+<td class="colLast"><span class="strong">CubeQueryContext.</span><code><strong><a href="../../../../../../org/apache/lens/cube/parse/CubeQueryContext.html#getRefColToDim()">getRefColToDim</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../../../org/apache/lens/cube/metadata/Dimension.html" title="class in org.apache.lens.cube.metadata">Dimension</a>&gt;</code></td>

@@ -162,6 +162,12 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <div class="block">Returns MethodMetrics object corresponding to the given name.</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../../org/apache/lens/server/api/metrics/MethodMetrics.html" title="class in org.apache.lens.server.api.metrics">MethodMetrics</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/server/api/metrics/MethodMetricsFactory.html#getMethodMetricsMap()">getMethodMetricsMap</a></strong>()</code>
+<div class="block">factory helper</div>
+</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
@@ -245,7 +251,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <a name="createMethodGauge(org.apache.hadoop.conf.Configuration, boolean, java.lang.String)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>createMethodGauge</h4>
 <pre>public static&nbsp;<a href="../../../../../../org/apache/lens/server/api/metrics/MethodMetricsContext.html" title="interface in org.apache.lens.server.api.metrics">MethodMetricsContext</a>&nbsp;createMethodGauge(@NonNull
@@ -255,6 +261,17 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <div class="block">Get query metric gauge name.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>conf</code> - </dd><dd><code>appendToStackName</code> - </dd><dd><code>gaugeSuffix</code> - </dd>
 <dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="getMethodMetricsMap()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getMethodMetricsMap</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../../org/apache/lens/server/api/metrics/MethodMetrics.html" title="class in org.apache.lens.server.api.metrics">MethodMetrics</a>&gt;&nbsp;getMethodMetricsMap()</pre>
+<div class="block">factory helper</div>
 </li>
 </ul>
 </li>

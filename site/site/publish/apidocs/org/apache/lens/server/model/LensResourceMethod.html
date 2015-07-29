@@ -118,7 +118,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><strong><a href="../../../../../org/apache/lens/server/model/LensResourceMethod.html#LensResourceMethod()">LensResourceMethod</a></strong>()</code>&nbsp;</td>
+<td class="colOne"><code><strong><a href="../../../../../org/apache/lens/server/model/LensResourceMethod.html#LensResourceMethod(org.glassfish.jersey.server.model.ResourceMethod)">LensResourceMethod</a></strong>(org.glassfish.jersey.server.model.ResourceMethod&nbsp;resourceMethod)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -176,13 +176,16 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="LensResourceMethod()">
+<a name="LensResourceMethod(org.glassfish.jersey.server.model.ResourceMethod)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>LensResourceMethod</h4>
-<pre>public&nbsp;LensResourceMethod()</pre>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/beans/ConstructorProperties.html?is-external=true" title="class or interface in java.beans">@ConstructorProperties</a>(<a href="http://docs.oracle.com/javase/7/docs/api/java/beans/ConstructorProperties.html?is-external=true#value()" title="class or interface in java.beans">value</a>="resourceMethod")
+<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;LensResourceMethod(@NonNull
+                                                            org.glassfish.jersey.server.model.ResourceMethod&nbsp;resourceMethod)</pre>
 </li>
 </ul>
 </li>
@@ -225,7 +228,7 @@ extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getDefaultValueForParam(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;paramName)</pre>
 <div class="block">Extract default value of a parameter from the parameter annotations of the handler method</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>paramName</code> - value of <code>FormDataParam</code> annotation on the handler
-                  method. Which will be the name of the argument in the request parameters</dd>
+ method. Which will be the name of the argument in the request parameters</dd>
 <dt><span class="strong">Returns:</span></dt><dd>value of <code>DefaultValue</code> annotation on the handler method</dd></dl>
 </li>
 </ul>

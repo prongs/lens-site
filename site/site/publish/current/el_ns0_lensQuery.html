@@ -109,19 +109,42 @@
       <h2>Example XML</h2>
       <code class="prettyprint lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;lensQuery&gt;
-  &lt;driverQuery&gt;...&lt;/driverQuery&gt;
-  &lt;isPersistent&gt;...&lt;/isPersistent&gt;
-  &lt;finishTime&gt;...&lt;/finishTime&gt;
+  &lt;resultSetPath&gt;...&lt;/resultSetPath&gt;
+  &lt;userQuery&gt;...&lt;/userQuery&gt;
   &lt;queryHandle&gt;
     &lt;handleId&gt;...&lt;/handleId&gt;
   &lt;/queryHandle&gt;
   &lt;selectedDriverClassName&gt;...&lt;/selectedDriverClassName&gt;
-  &lt;priority&gt;...&lt;/priority&gt;
-  &lt;driverStartTime&gt;...&lt;/driverStartTime&gt;
+  &lt;isPersistent&gt;...&lt;/isPersistent&gt;
   &lt;driverOpHandle&gt;...&lt;/driverOpHandle&gt;
-  &lt;launchTime&gt;...&lt;/launchTime&gt;
-  &lt;submittedUser&gt;...&lt;/submittedUser&gt;
-  &lt;driverFinishTime&gt;...&lt;/driverFinishTime&gt;
+  &lt;priority&gt;...&lt;/priority&gt;
+  &lt;status&gt;
+    &lt;statusMessage&gt;...&lt;/statusMessage&gt;
+    &lt;errorMessage&gt;...&lt;/errorMessage&gt;
+    &lt;lensErrorTO&gt;
+      &lt;stackTrace&gt;...&lt;/stackTrace&gt;
+      &lt;childErrors&gt;
+        &lt;error&gt;
+          &lt;!--...--&gt;
+        &lt;/error&gt;
+        &lt;error&gt;
+          &lt;!--...--&gt;
+        &lt;/error&gt;
+        &lt;!--...more &quot;error&quot; elements...--&gt;
+      &lt;/childErrors&gt;
+      &lt;code&gt;...&lt;/code&gt;
+      &lt;message&gt;...&lt;/message&gt;
+      &lt;payload&gt;
+        &lt;!--custom xml--&gt;
+      &lt;/payload&gt;
+    &lt;/lensErrorTO&gt;
+    &lt;progress&gt;...&lt;/progress&gt;
+    &lt;progressMessage&gt;...&lt;/progressMessage&gt;
+    &lt;status&gt;...&lt;/status&gt;
+    &lt;isResultSetAvailable&gt;...&lt;/isResultSetAvailable&gt;
+  &lt;/status&gt;
+  &lt;driverQuery&gt;...&lt;/driverQuery&gt;
+  &lt;submissionTime&gt;...&lt;/submissionTime&gt;
   &lt;queryConf&gt;
     &lt;properties&gt;
       &lt;entry&gt;
@@ -139,81 +162,58 @@
       &lt;!--...more entries...--&gt;
     &lt;/properties&gt;
   &lt;/queryConf&gt;
-  &lt;status&gt;
-    &lt;errorMessage&gt;...&lt;/errorMessage&gt;
-    &lt;lensErrorTO&gt;
-      &lt;childErrors&gt;
-        &lt;error&gt;
-          &lt;!--...--&gt;
-        &lt;/error&gt;
-        &lt;error&gt;
-          &lt;!--...--&gt;
-        &lt;/error&gt;
-        &lt;!--...more &quot;error&quot; elements...--&gt;
-      &lt;/childErrors&gt;
-      &lt;message&gt;...&lt;/message&gt;
-      &lt;code&gt;...&lt;/code&gt;
-      &lt;payload&gt;
-        &lt;!--custom xml--&gt;
-      &lt;/payload&gt;
-      &lt;stackTrace&gt;...&lt;/stackTrace&gt;
-    &lt;/lensErrorTO&gt;
-    &lt;progressMessage&gt;...&lt;/progressMessage&gt;
-    &lt;statusMessage&gt;...&lt;/statusMessage&gt;
-    &lt;isResultSetAvailable&gt;...&lt;/isResultSetAvailable&gt;
-    &lt;status&gt;...&lt;/status&gt;
-    &lt;progress&gt;...&lt;/progress&gt;
-  &lt;/status&gt;
-  &lt;submissionTime&gt;...&lt;/submissionTime&gt;
-  &lt;resultSetPath&gt;...&lt;/resultSetPath&gt;
+  &lt;finishTime&gt;...&lt;/finishTime&gt;
   &lt;queryName&gt;...&lt;/queryName&gt;
   &lt;closedTime&gt;...&lt;/closedTime&gt;
-  &lt;userQuery&gt;...&lt;/userQuery&gt;
+  &lt;driverStartTime&gt;...&lt;/driverStartTime&gt;
+  &lt;driverFinishTime&gt;...&lt;/driverFinishTime&gt;
+  &lt;submittedUser&gt;...&lt;/submittedUser&gt;
+  &lt;launchTime&gt;...&lt;/launchTime&gt;
 &lt;/lensQuery&gt;</code>
       <h2>Example JSON</h2>
       <code class="prettyprint lang-js">{
-  &quot;driverQuery&quot; : &quot;...&quot;,
-  &quot;isPersistent&quot; : false,
-  &quot;finishTime&quot; : ...,
+  &quot;resultSetPath&quot; : &quot;...&quot;,
+  &quot;userQuery&quot; : &quot;...&quot;,
   &quot;queryHandle&quot; : {
     &quot;handleId&quot; : &quot;...&quot;
   },
   &quot;selectedDriverClassName&quot; : &quot;...&quot;,
-  &quot;priority&quot; : &quot;VERY_HIGH&quot;,
-  &quot;driverStartTime&quot; : ...,
+  &quot;isPersistent&quot; : false,
   &quot;driverOpHandle&quot; : &quot;...&quot;,
-  &quot;launchTime&quot; : ...,
-  &quot;submittedUser&quot; : &quot;...&quot;,
-  &quot;driverFinishTime&quot; : ...,
+  &quot;priority&quot; : &quot;VERY_HIGH&quot;,
+  &quot;status&quot; : {
+    &quot;statusMessage&quot; : &quot;...&quot;,
+    &quot;errorMessage&quot; : &quot;...&quot;,
+    &quot;lensErrorTO&quot; : {
+      &quot;stackTrace&quot; : &quot;...&quot;,
+      &quot;childErrors&quot; : [ {
+        &quot;...&quot; : ...
+      }, ... ],
+      &quot;code&quot; : ...,
+      &quot;message&quot; : &quot;...&quot;,
+      &quot;payload&quot; : {
+      }
+    },
+    &quot;progress&quot; : ...,
+    &quot;progressMessage&quot; : &quot;...&quot;,
+    &quot;status&quot; : &quot;NEW&quot;,
+    &quot;isResultSetAvailable&quot; : false
+  },
+  &quot;driverQuery&quot; : &quot;...&quot;,
+  &quot;submissionTime&quot; : ...,
   &quot;queryConf&quot; : {
     &quot;properties&quot; : {
       &quot;...&quot; : &quot;...&quot;,
       &quot;---&quot; : ...
     }
   },
-  &quot;status&quot; : {
-    &quot;errorMessage&quot; : &quot;...&quot;,
-    &quot;lensErrorTO&quot; : {
-      &quot;childErrors&quot; : [ {
-        &quot;...&quot; : ...
-      }, ... ],
-      &quot;message&quot; : &quot;...&quot;,
-      &quot;code&quot; : ...,
-      &quot;payload&quot; : {
-      },
-      &quot;stackTrace&quot; : &quot;...&quot;
-    },
-    &quot;progressMessage&quot; : &quot;...&quot;,
-    &quot;statusMessage&quot; : &quot;...&quot;,
-    &quot;isResultSetAvailable&quot; : false,
-    &quot;status&quot; : &quot;NEW&quot;,
-    &quot;progress&quot; : ...
-  },
-  &quot;submissionTime&quot; : ...,
-  &quot;resultSetPath&quot; : &quot;...&quot;,
+  &quot;finishTime&quot; : ...,
   &quot;queryName&quot; : &quot;...&quot;,
   &quot;closedTime&quot; : ...,
-  &quot;userQuery&quot; : &quot;...&quot;
+  &quot;driverStartTime&quot; : ...,
+  &quot;driverFinishTime&quot; : ...,
+  &quot;submittedUser&quot; : &quot;...&quot;,
+  &quot;launchTime&quot; : ...
 }</code>
 
       <div class="clear" />

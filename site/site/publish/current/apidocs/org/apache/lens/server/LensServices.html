@@ -222,8 +222,16 @@ implements <a href="../../../../org/apache/lens/server/api/ServiceProvider.html"
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/apache/lens/api/error/ErrorCollection.html" title="interface in org.apache.lens.api.error">ErrorCollection</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/lens/server/LensServices.html#getErrorCollection()">getErrorCollection</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/apache/lens/server/BaseLensService.html" title="class in org.apache.lens.server">BaseLensService</a>&gt;</code></td>
 <td class="colLast"><code><strong><a href="../../../../org/apache/lens/server/LensServices.html#getLensServices()">getLensServices</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/apache/lens/server/model/LogSegregationContext.html" title="interface in org.apache.lens.server.model">LogSegregationContext</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/lens/server/LensServices.html#getLogSegregationContext()">getLogSegregationContext</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>&lt;T extends org.apache.hive.service.Service&gt;&nbsp;<br>T</code></td>
@@ -232,16 +240,28 @@ implements <a href="../../../../org/apache/lens/server/api/ServiceProvider.html"
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/apache/lens/server/LensServices.SERVICE_MODE.html" title="enum in org.apache.lens.server">LensServices.SERVICE_MODE</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/lens/server/LensServices.html#getServiceMode()">getServiceMode</a></strong>()</code>
+<div class="block">The service mode.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>org.apache.hive.service.Service.STATE</code></td>
 <td class="colLast"><code><strong><a href="../../../../org/apache/lens/server/LensServices.html#getServiceState()">getServiceState</a></strong>()</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><strong><a href="../../../../org/apache/lens/server/LensServices.html#init(org.apache.hadoop.hive.conf.HiveConf)">init</a></strong>(org.apache.hadoop.hive.conf.HiveConf&nbsp;hiveConf)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><strong><a href="../../../../org/apache/lens/server/LensServices.html#isStopping()">isStopping</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../org/apache/lens/server/LensServices.html#setServiceMode(org.apache.lens.server.LensServices.SERVICE_MODE)">setServiceMode</a></strong>(<a href="../../../../org/apache/lens/server/LensServices.SERVICE_MODE.html" title="enum in org.apache.lens.server">LensServices.SERVICE_MODE</a>&nbsp;serviceMode)</code>
+<div class="block">The service mode.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -437,10 +457,52 @@ implements <a href="../../../../org/apache/lens/server/api/ServiceProvider.html"
 <a name="getLensServices()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getLensServices</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/apache/lens/server/BaseLensService.html" title="class in org.apache.lens.server">BaseLensService</a>&gt;&nbsp;getLensServices()</pre>
+</li>
+</ul>
+<a name="getServiceMode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getServiceMode</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../org/apache/lens/server/LensServices.SERVICE_MODE.html" title="enum in org.apache.lens.server">LensServices.SERVICE_MODE</a>&nbsp;getServiceMode()</pre>
+<div class="block">The service mode.</div>
+</li>
+</ul>
+<a name="setServiceMode(org.apache.lens.server.LensServices.SERVICE_MODE)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setServiceMode</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;void&nbsp;setServiceMode(<a href="../../../../org/apache/lens/server/LensServices.SERVICE_MODE.html" title="enum in org.apache.lens.server">LensServices.SERVICE_MODE</a>&nbsp;serviceMode)</pre>
+<div class="block">The service mode.</div>
+</li>
+</ul>
+<a name="getErrorCollection()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getErrorCollection</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../org/apache/lens/api/error/ErrorCollection.html" title="interface in org.apache.lens.api.error">ErrorCollection</a>&nbsp;getErrorCollection()</pre>
+</li>
+</ul>
+<a name="getLogSegregationContext()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getLogSegregationContext</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true" title="class or interface in javax.annotation">@Generated</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Generated.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>="lombok")
+public&nbsp;<a href="../../../../org/apache/lens/server/model/LogSegregationContext.html" title="interface in org.apache.lens.server.model">LogSegregationContext</a>&nbsp;getLogSegregationContext()</pre>
 </li>
 </ul>
 </li>

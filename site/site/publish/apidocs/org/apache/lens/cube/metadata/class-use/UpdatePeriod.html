@@ -110,6 +110,14 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../org/apache/lens/cube/metadata/UpdatePeriod.html" title="enum in org.apache.lens.cube.metadata">UpdatePeriod</a></code></td>
+<td class="colLast"><span class="strong">FactPartition.</span><code><strong><a href="../../../../../../org/apache/lens/cube/metadata/FactPartition.html#getPeriod()">getPeriod</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../org/apache/lens/cube/metadata/UpdatePeriod.html" title="enum in org.apache.lens.cube.metadata">UpdatePeriod</a></code></td>
+<td class="colLast"><span class="strong">TimePartition.</span><code><strong><a href="../../../../../../org/apache/lens/cube/metadata/TimePartition.html#getUpdatePeriod()">getUpdatePeriod</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../org/apache/lens/cube/metadata/UpdatePeriod.html" title="enum in org.apache.lens.cube.metadata">UpdatePeriod</a></code></td>
 <td class="colLast"><span class="strong">StoragePartitionDesc.</span><code><strong><a href="../../../../../../org/apache/lens/cube/metadata/StoragePartitionDesc.html#getUpdatePeriod()">getUpdatePeriod</a></strong>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -408,6 +416,19 @@ the order they are declared.</div>
 </a>
 <h3>Uses of <a href="../../../../../../org/apache/lens/cube/metadata/UpdatePeriod.html" title="enum in org.apache.lens.cube.metadata">UpdatePeriod</a> in <a href="../../../../../../org/apache/lens/cube/metadata/timeline/package-summary.html">org.apache.lens.cube.metadata.timeline</a></h3>
 <table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../org/apache/lens/cube/metadata/timeline/package-summary.html">org.apache.lens.cube.metadata.timeline</a> that return <a href="../../../../../../org/apache/lens/cube/metadata/UpdatePeriod.html" title="enum in org.apache.lens.cube.metadata">UpdatePeriod</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../org/apache/lens/cube/metadata/UpdatePeriod.html" title="enum in org.apache.lens.cube.metadata">UpdatePeriod</a></code></td>
+<td class="colLast"><span class="strong">PartitionTimeline.</span><code><strong><a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html#getUpdatePeriod()">getUpdatePeriod</a></strong>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
 <caption><span>Methods in <a href="../../../../../../org/apache/lens/cube/metadata/timeline/package-summary.html">org.apache.lens.cube.metadata.timeline</a> with parameters of type <a href="../../../../../../org/apache/lens/cube/metadata/UpdatePeriod.html" title="enum in org.apache.lens.cube.metadata">UpdatePeriod</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
@@ -437,11 +458,16 @@ the order they are declared.</div>
                              <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;partCol)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/cube/metadata/timeline/PartitionTimeline.html#PartitionTimeline(java.lang.String,%20org.apache.lens.cube.metadata.UpdatePeriod,%20java.lang.String)">PartitionTimeline</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;storageTableName,
+                 <a href="../../../../../../org/apache/lens/cube/metadata/UpdatePeriod.html" title="enum in org.apache.lens.cube.metadata">UpdatePeriod</a>&nbsp;updatePeriod,
+                 <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;partCol)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/cube/metadata/timeline/RangesPartitionTimeline.html#RangesPartitionTimeline(java.lang.String,%20org.apache.lens.cube.metadata.UpdatePeriod,%20java.lang.String)">RangesPartitionTimeline</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;storageTableName,
                        <a href="../../../../../../org/apache/lens/cube/metadata/UpdatePeriod.html" title="enum in org.apache.lens.cube.metadata">UpdatePeriod</a>&nbsp;updatePeriod,
                        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;partCol)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colLast"><code><strong><a href="../../../../../../org/apache/lens/cube/metadata/timeline/StoreAllPartitionTimeline.html#StoreAllPartitionTimeline(java.lang.String,%20org.apache.lens.cube.metadata.UpdatePeriod,%20java.lang.String)">StoreAllPartitionTimeline</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;storageTableName,
                          <a href="../../../../../../org/apache/lens/cube/metadata/UpdatePeriod.html" title="enum in org.apache.lens.cube.metadata">UpdatePeriod</a>&nbsp;updatePeriod,
                          <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;partCol)</code>&nbsp;</td>
