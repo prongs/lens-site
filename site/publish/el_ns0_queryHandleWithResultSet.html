@@ -109,10 +109,14 @@
       <h2>Example XML</h2>
       <code class="prettyprint lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;queryHandleWithResultSet&gt;
-  &lt;result /&gt;
+  &lt;queryHandle&gt;
+    &lt;handleId&gt;...&lt;/handleId&gt;
+  &lt;/queryHandle&gt;
   &lt;status&gt;
+    &lt;statusMessage&gt;...&lt;/statusMessage&gt;
     &lt;errorMessage&gt;...&lt;/errorMessage&gt;
     &lt;lensErrorTO&gt;
+      &lt;stackTrace&gt;...&lt;/stackTrace&gt;
       &lt;childErrors&gt;
         &lt;error&gt;
           &lt;!--...--&gt;
@@ -122,47 +126,43 @@
         &lt;/error&gt;
         &lt;!--...more &quot;error&quot; elements...--&gt;
       &lt;/childErrors&gt;
-      &lt;message&gt;...&lt;/message&gt;
       &lt;code&gt;...&lt;/code&gt;
+      &lt;message&gt;...&lt;/message&gt;
       &lt;payload&gt;
         &lt;!--custom xml--&gt;
       &lt;/payload&gt;
-      &lt;stackTrace&gt;...&lt;/stackTrace&gt;
     &lt;/lensErrorTO&gt;
-    &lt;progressMessage&gt;...&lt;/progressMessage&gt;
-    &lt;statusMessage&gt;...&lt;/statusMessage&gt;
-    &lt;isResultSetAvailable&gt;...&lt;/isResultSetAvailable&gt;
-    &lt;status&gt;...&lt;/status&gt;
     &lt;progress&gt;...&lt;/progress&gt;
+    &lt;progressMessage&gt;...&lt;/progressMessage&gt;
+    &lt;status&gt;...&lt;/status&gt;
+    &lt;isResultSetAvailable&gt;...&lt;/isResultSetAvailable&gt;
   &lt;/status&gt;
-  &lt;queryHandle&gt;
-    &lt;handleId&gt;...&lt;/handleId&gt;
-  &lt;/queryHandle&gt;
+  &lt;result /&gt;
 &lt;/queryHandleWithResultSet&gt;</code>
       <h2>Example JSON</h2>
       <code class="prettyprint lang-js">{
-  &quot;result&quot; : {
+  &quot;queryHandle&quot; : {
+    &quot;handleId&quot; : &quot;...&quot;
   },
   &quot;status&quot; : {
+    &quot;statusMessage&quot; : &quot;...&quot;,
     &quot;errorMessage&quot; : &quot;...&quot;,
     &quot;lensErrorTO&quot; : {
+      &quot;stackTrace&quot; : &quot;...&quot;,
       &quot;childErrors&quot; : [ {
         &quot;...&quot; : ...
       }, ... ],
-      &quot;message&quot; : &quot;...&quot;,
       &quot;code&quot; : ...,
+      &quot;message&quot; : &quot;...&quot;,
       &quot;payload&quot; : {
-      },
-      &quot;stackTrace&quot; : &quot;...&quot;
+      }
     },
+    &quot;progress&quot; : ...,
     &quot;progressMessage&quot; : &quot;...&quot;,
-    &quot;statusMessage&quot; : &quot;...&quot;,
-    &quot;isResultSetAvailable&quot; : false,
     &quot;status&quot; : &quot;NEW&quot;,
-    &quot;progress&quot; : ...
+    &quot;isResultSetAvailable&quot; : false
   },
-  &quot;queryHandle&quot; : {
-    &quot;handleId&quot; : &quot;...&quot;
+  &quot;result&quot; : {
   }
 }</code>
 

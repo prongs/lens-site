@@ -110,6 +110,7 @@
       <code class="prettyprint lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;lensAPIResult&gt;
   &lt;error&gt;
+    &lt;stackTrace&gt;...&lt;/stackTrace&gt;
     &lt;childErrors&gt;
       &lt;error&gt;
         &lt;!--...--&gt;
@@ -119,34 +120,33 @@
       &lt;/error&gt;
       &lt;!--...more &quot;error&quot; elements...--&gt;
     &lt;/childErrors&gt;
-    &lt;message&gt;...&lt;/message&gt;
     &lt;code&gt;...&lt;/code&gt;
+    &lt;message&gt;...&lt;/message&gt;
     &lt;payload&gt;
       &lt;!--custom xml--&gt;
     &lt;/payload&gt;
-    &lt;stackTrace&gt;...&lt;/stackTrace&gt;
   &lt;/error&gt;
-  &lt;id&gt;...&lt;/id&gt;
   &lt;data&gt;
     &lt;!--custom xml--&gt;
   &lt;/data&gt;
+  &lt;id&gt;...&lt;/id&gt;
   &lt;apiVersion&gt;...&lt;/apiVersion&gt;
 &lt;/lensAPIResult&gt;</code>
       <h2>Example JSON</h2>
       <code class="prettyprint lang-js">{
   &quot;error&quot; : {
+    &quot;stackTrace&quot; : &quot;...&quot;,
     &quot;childErrors&quot; : [ {
       &quot;...&quot; : ...
     }, ... ],
-    &quot;message&quot; : &quot;...&quot;,
     &quot;code&quot; : ...,
+    &quot;message&quot; : &quot;...&quot;,
     &quot;payload&quot; : {
-    },
-    &quot;stackTrace&quot; : &quot;...&quot;
+    }
   },
-  &quot;id&quot; : &quot;...&quot;,
   &quot;data&quot; : {
   },
+  &quot;id&quot; : &quot;...&quot;,
   &quot;apiVersion&quot; : &quot;...&quot;
 }</code>
 

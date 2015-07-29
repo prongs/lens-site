@@ -117,7 +117,7 @@
         </tr>
         <tr>
           <td>
-            driverQuery (string)
+            resultSetPath (string)
           </td>
           <td>0/1</td>
           <td>
@@ -125,17 +125,9 @@
         </tr>
         <tr>
           <td>
-            isPersistent (boolean)
+            userQuery (string)
           </td>
-          <td>1/1</td>
-          <td>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            finishTime (long)
-          </td>
-          <td>1/1</td>
+          <td>0/1</td>
           <td>
           </td>
         </tr>
@@ -157,15 +149,7 @@
         </tr>
         <tr>
           <td>
-            priority (<a href="ns0_priority.html">priority</a>)
-          </td>
-          <td>0/1</td>
-          <td>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            driverStartTime (long)
+            isPersistent (boolean)
           </td>
           <td>1/1</td>
           <td>
@@ -181,31 +165,7 @@
         </tr>
         <tr>
           <td>
-            launchTime (long)
-          </td>
-          <td>1/1</td>
-          <td>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            submittedUser (string)
-          </td>
-          <td>0/1</td>
-          <td>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            driverFinishTime (long)
-          </td>
-          <td>1/1</td>
-          <td>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            queryConf (<a href="ns0_lensConf.html">lensConf</a>)
+            priority (<a href="ns0_priority.html">priority</a>)
           </td>
           <td>0/1</td>
           <td>
@@ -221,6 +181,14 @@
         </tr>
         <tr>
           <td>
+            driverQuery (string)
+          </td>
+          <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
             submissionTime (long)
           </td>
           <td>1/1</td>
@@ -229,9 +197,17 @@
         </tr>
         <tr>
           <td>
-            resultSetPath (string)
+            queryConf (<a href="ns0_lensConf.html">lensConf</a>)
           </td>
           <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            finishTime (long)
+          </td>
+          <td>1/1</td>
           <td>
           </td>
         </tr>
@@ -253,9 +229,33 @@
         </tr>
         <tr>
           <td>
-            userQuery (string)
+            driverStartTime (long)
+          </td>
+          <td>1/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            driverFinishTime (long)
+          </td>
+          <td>1/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            submittedUser (string)
           </td>
           <td>0/1</td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            launchTime (long)
+          </td>
+          <td>1/1</td>
           <td>
           </td>
         </tr>
@@ -269,25 +269,17 @@
           <th>description</th>
         </tr>
         <tr>
-          <td>driverQuery</td>
+          <td>resultSetPath</td>
           <td>
-              driverQuery (string)
+              resultSetPath (string)
           </td>
           <td>
           </td>
         </tr>
         <tr>
-          <td>isPersistent</td>
+          <td>userQuery</td>
           <td>
-              isPersistent (boolean)
-          </td>
-          <td>
-          </td>
-        </tr>
-        <tr>
-          <td>finishTime</td>
-          <td>
-              finishTime (long)
+              userQuery (string)
           </td>
           <td>
           </td>
@@ -309,17 +301,9 @@
           </td>
         </tr>
         <tr>
-          <td>priority</td>
+          <td>isPersistent</td>
           <td>
-              priority (<a href="ns0_priority.html">priority</a>)
-          </td>
-          <td>
-          </td>
-        </tr>
-        <tr>
-          <td>driverStartTime</td>
-          <td>
-              driverStartTime (long)
+              isPersistent (boolean)
           </td>
           <td>
           </td>
@@ -333,33 +317,9 @@
           </td>
         </tr>
         <tr>
-          <td>launchTime</td>
+          <td>priority</td>
           <td>
-              launchTime (long)
-          </td>
-          <td>
-          </td>
-        </tr>
-        <tr>
-          <td>submittedUser</td>
-          <td>
-              submittedUser (string)
-          </td>
-          <td>
-          </td>
-        </tr>
-        <tr>
-          <td>driverFinishTime</td>
-          <td>
-              driverFinishTime (long)
-          </td>
-          <td>
-          </td>
-        </tr>
-        <tr>
-          <td>queryConf</td>
-          <td>
-              queryConf (<a href="ns0_lensConf.html">lensConf</a>)
+              priority (<a href="ns0_priority.html">priority</a>)
           </td>
           <td>
           </td>
@@ -373,6 +333,14 @@
           </td>
         </tr>
         <tr>
+          <td>driverQuery</td>
+          <td>
+              driverQuery (string)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
           <td>submissionTime</td>
           <td>
               submissionTime (long)
@@ -381,9 +349,17 @@
           </td>
         </tr>
         <tr>
-          <td>resultSetPath</td>
+          <td>queryConf</td>
           <td>
-              resultSetPath (string)
+              queryConf (<a href="ns0_lensConf.html">lensConf</a>)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>finishTime</td>
+          <td>
+              finishTime (long)
           </td>
           <td>
           </td>
@@ -405,9 +381,33 @@
           </td>
         </tr>
         <tr>
-          <td>userQuery</td>
+          <td>driverStartTime</td>
           <td>
-              userQuery (string)
+              driverStartTime (long)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>driverFinishTime</td>
+          <td>
+              driverFinishTime (long)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>submittedUser</td>
+          <td>
+              submittedUser (string)
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>launchTime</td>
+          <td>
+              launchTime (long)
           </td>
           <td>
           </td>
